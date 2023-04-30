@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="502.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.VerHuespedes">
+    <TableView fx:id="tabla_cliente" layoutY="143.0" prefHeight="358.0" prefWidth="575.0">
+      <columns>
+          <TableColumn prefWidth="75.0" text="Id" />
+          <TableColumn prefWidth="75.0" text="Nombre" />
+          <TableColumn prefWidth="75.0" text="Apellido" />
+          <TableColumn prefWidth="126.39990234375" text="Fecha Nacimiento" />
+          <TableColumn prefWidth="125.60003662109375" text="Nacionalidad" />
+          <TableColumn minWidth="0.0" prefWidth="96.7999267578125" text="Telefono" />
+      </columns>
+    </TableView>
+</AnchorPane>
