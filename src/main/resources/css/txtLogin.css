@@ -1,0 +1,35 @@
+.text-field{	
+        -fx-width: 100%;
+        -fx-padding: 0 5px;
+        -fx-height: 40px;
+        -fx-border: none;
+        -fx-background: none;
+        -fx-outline: none;  
+        -fx-font-family: Times New Roman, serif;
+        -fx-font-size: 15px; 
+        -fx-font-weight: bold; 
+        -fx-text-fill: rgb(72, 74, 64);
+}
+
+
+.text-field:focused {
+        -fx-background: none;
+	-fx-outline: none;
+	-fx-background-color: rgba(179, 122, 122, 0.5);
+        -fx-text-fill: rgb(186, 233, 16);
+}
+
+.panel{
+        -fx-background-radius: 40;
+        -fx-opacity: 0.9;
+       -fx-background-color: rgb(179, 122, 122);
+}
+ 
+.boton{
+        -fx-display:block;
+        -fx-height: 300px;        
+        -fx-background-radius: 50;
+        
+      }
+
+

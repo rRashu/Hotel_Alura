@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="469.0" prefWidth="546.0" style="-fx-background-color: rgb(179, 122, 122);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.IngresoHuesped">
+
+   <Label layoutX="57.0" layoutY="8.0" prefHeight="68.0" prefWidth="315.0" text="Registrar Huespedes" textAlignment="CENTER" textOverrun="CLIP">
+      <font>
+         <Font name="Comic Sans MS" size="26.0" />
+      </font>
+   </Label>
+   <DatePicker fx:id="fecha_nacimiento" editable="false" layoutX="209.0" layoutY="212.0" prefHeight="35.0" prefWidth="301.0" promptText="Seleccione" stylesheets="@../../../../css/DateP.css" />
+   <TextField fx:id="txtnombre" layoutX="209.0" layoutY="95.0" stylesheets="@../../../../css/DateP.css" />
+   <TextField fx:id="txtapellido" layoutX="209.0" layoutY="155.0" stylesheets="@../../../../css/DateP.css" />
+   <ComboBox fx:id="combo_naciolidad" layoutX="209.0" layoutY="272.0" prefHeight="36.0" prefWidth="296.0" promptText="Seleccione" stylesheets="@../../../../css/combo.css" />
+   <TextField fx:id="txttelefono" layoutX="208.0" layoutY="335.0" prefHeight="28.0" prefWidth="225.0" stylesheets="@../../../../css/DateP.css" />
+   <Label layoutX="34.0" layoutY="101.0" text="Nombrer" textFill="#1d2123">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font>
+      <effect>
+         <Glow />
+      </effect></Label>
+   <Label layoutX="34.0" layoutY="161.0" text="Apellido" textFill="#1d2123">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font>
+      <effect>
+         <Glow />
+      </effect></Label>
+   <Label contentDisplay="RIGHT" ellipsisString="" layoutX="34.0" layoutY="229.0" text="Fecha Nacimiento" textFill="#1d2123" textOverrun="LEADING_ELLIPSIS">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font>
+      <effect>
+         <Glow />
+      </effect></Label>
+   <Label layoutX="34.0" layoutY="336.0" text="Telefono" textFill="#1d2123">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font>
+      <effect>
+         <Glow />
+      </effect></Label>
+   <Label contentDisplay="RIGHT" ellipsisString="" layoutX="34.0" layoutY="290.0" text="Nacionalidad" textFill="#1d2123" textOverrun="CLIP">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font>
+      <effect>
+         <Blend />
+      </effect>
+   </Label>
+   <Button id="button" fx:id="guardarHuesped" defaultButton="true" layoutX="215.0" layoutY="411.0" mnemonicParsing="false" onAction="#Acceder" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: white;" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Button" textAlignment="CENTER" />
+
+</AnchorPane>
