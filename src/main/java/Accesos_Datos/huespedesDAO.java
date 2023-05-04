@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class huespedesDAO {
-private Connection con;
+private final Connection con;
 
     public huespedesDAO(Connection con) {
         this.con = con;
@@ -19,7 +19,7 @@ private Connection con;
         try {
             PreparedStatement statement;
             statement = con.prepareStatement(
-                    "INSERT INTO huespedes "
+                    "INSERT INTO hotel_alura.huespedes "
                             + "(nombre, apellido, fecha_nacimiento, nacionalidad,telefono)"
                             + " VALUES (?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
 
@@ -36,7 +36,7 @@ private Connection con;
                     while (resultSet.next()) {
                         huesped.setId(resultSet.getInt(1));
 
-                        System.out.println(String.format("Fue insertado el producto: %s", huesped.toString()));
+                        System.out.printf("Fue insertado el producto: %s%n", huesped);
                     }
                 }
             }
@@ -50,7 +50,7 @@ private Connection con;
 
         try {
             final PreparedStatement statement = con
-                    .prepareStatement("SELECT id, nombre, apellido, fecha_nacimiento,nacionalidad,telefono FROM huespedes");
+                    .prepareStatement("SELECT id, nombre, apellido, fecha_nacimiento,nacionalidad,telefono FROM hotel_alura.huespedes");
 
             try (statement) {
                 statement.execute();

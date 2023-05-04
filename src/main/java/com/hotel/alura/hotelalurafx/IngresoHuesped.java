@@ -11,7 +11,8 @@ import javafx.scene.control.TextField;
 import java.sql.Connection;
 import java.sql.Date;
 
-public class IngresoHuesped {
+public class
+IngresoHuesped {
     public Button guardarHuesped;
     public DatePicker fecha_nacimiento;
     public TextField txtnombre;
@@ -29,7 +30,7 @@ Connection con;
     }
 
     public void Acceder() {
-        Huesped hues = new Huesped();
+        Huesped hues = new Huesped(resultSet.getInt("id"), resultSet.getDate("fecha_entrada"), resultSet.getDate("fecha_salida"), resultSet.getDate("valor"), resultSet.getString("forma_pago"), resultSet.getString("id_huesped"));
         hues.setNombre(txtnombre.getText());
         hues.setApellido(txtapellido.getText());
         hues.setFecha_nacimiento(Date.valueOf(fecha_nacimiento.getValue()));

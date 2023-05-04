@@ -1,11 +1,9 @@
 package Modelo;
 
-import javafx.scene.control.DatePicker;
-
 import java.sql.Date;
 
 public class Huesped {
-    public Huesped() {
+    public Huesped(int id, Date fechaEntrada, Date fechaSalida, double valor, String formaPago, int idHuesped) {
 
     }
 
@@ -24,19 +22,6 @@ public class Huesped {
         this.nacionalidad = nacionalidad;
         this.telefono = telefono;
     }
-
-    @Override
-    public String toString() {
-        return "Huesped{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", fecha_nacimiento=" + fecha_nacimiento +
-                ", nacionalidad='" + nacionalidad + '\'' +
-                ", telefono='" + telefono + '\'' +
-                '}';
-    }
-
-
 
     public int getId() {
         return id;

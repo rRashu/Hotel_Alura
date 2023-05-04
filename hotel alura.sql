@@ -18,10 +18,11 @@ create table reservas(
     fecha_salida date not null,
     valor float not null,
     forma_pago varchar (200) not null,
+    id_huesped integer,
     primary key (id)
 );
 
-ALTER TABLE reservas ADD FOREIGN KEY (id) REFERENCES huespedes(id);
+ALTER TABLE reservas ADD FOREIGN KEY (id_huesped) REFERENCES huespedes(id);
 
 INSERT INTO `hotel_alura`.`huespedes`(`id`, `nombre`, `apellido`, `fecha_nacimiento`, `nacionalidad`, `telefono`) 
 	VALUES ('1', 'robin', 'rezabala', '1994-07-11', 'gret', '099999');
