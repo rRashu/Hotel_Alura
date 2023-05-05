@@ -5,21 +5,16 @@ import java.sql.Date;
 public class Reserva {
 
     private int id;
-
-
     private int id_huesped;
     private Date dia_entrada;
-    private Date getDia_salida;
+    private Date dia_salida;
     private String forma_pago;
     private double valor_cancelar;
 
     public Reserva() {
-    }
-
-    public Reserva(int id_huesped, Date dia_entrada, Date getDia_salida, String forma_pago, double valor_cancelar) {
         this.id_huesped = id_huesped;
         this.dia_entrada = dia_entrada;
-        this.getDia_salida = getDia_salida;
+        this.dia_salida = dia_salida;
         this.forma_pago = forma_pago;
         this.valor_cancelar = valor_cancelar;
     }
@@ -48,12 +43,12 @@ public class Reserva {
         this.dia_entrada = dia_entrada;
     }
 
-    public Date getGetDia_salida() {
-        return getDia_salida;
+    public Date getDia_salida() {
+        return dia_salida;
     }
 
-    public void setGetDia_salida(Date getDia_salida) {
-        this.getDia_salida = getDia_salida;
+    public void setDia_salida(Date dia_salida) {
+        this.dia_salida = dia_salida;
     }
 
     public String getForma_pago() {
@@ -71,5 +66,4 @@ public class Reserva {
     public void setValor_cancelar(double valor_cancelar) {
         this.valor_cancelar = valor_cancelar;
     }
-
 }

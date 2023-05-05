@@ -35,7 +35,6 @@ private final Connection con;
                 try (resultSet) {
                     while (resultSet.next()) {
                         huesped.setId(resultSet.getInt(1));
-
                         System.out.printf("Fue insertado el producto: %s%n", huesped);
                     }
                 }
@@ -72,7 +71,6 @@ private final Connection con;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
         return resultado;
     }
 }

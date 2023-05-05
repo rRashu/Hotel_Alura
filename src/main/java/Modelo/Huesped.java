@@ -25,8 +25,7 @@ public class Huesped {
 
     }
 
-    public Huesped(int id, Date fechaEntrada, Date fechaSalida, double valor, String formaPago, int idHuesped) {
-    }
+
 
     public int getId() {
         return id;
