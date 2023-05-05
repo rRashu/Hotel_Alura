@@ -14,8 +14,6 @@ private final Connection con;
         this.con = con;
     }
 
-
-
     public void guardar(Reserva reserva) {
         try {
             PreparedStatement statement;
@@ -36,7 +34,6 @@ private final Connection con;
                 try (resultSet) {
                     while (resultSet.next()) {
                         reserva.setId(resultSet.getInt(1));
-
                         System.out.printf("Fue insertado el producto: %s%n", reserva);
                     }
                 }

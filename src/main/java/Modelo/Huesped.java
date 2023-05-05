@@ -3,9 +3,7 @@ package Modelo;
 import java.sql.Date;
 
 public class Huesped {
-    public Huesped(int id, Date fechaEntrada, Date fechaSalida, double valor, String formaPago, int idHuesped) {
 
-    }
 
     private int id;
     private String nombre;
@@ -21,6 +19,13 @@ public class Huesped {
         this.apellido = apellido;
         this.nacionalidad = nacionalidad;
         this.telefono = telefono;
+    }
+
+    public Huesped() {
+
+    }
+
+    public Huesped(int id, Date fechaEntrada, Date fechaSalida, double valor, String formaPago, int idHuesped) {
     }
 
     public int getId() {

@@ -30,7 +30,7 @@ Connection con;
     }
 
     public void Acceder() {
-        Huesped hues = new Huesped(resultSet.getInt("id"), resultSet.getDate("fecha_entrada"), resultSet.getDate("fecha_salida"), resultSet.getDate("valor"), resultSet.getString("forma_pago"), resultSet.getString("id_huesped"));
+        Huesped hues = new Huesped();
         hues.setNombre(txtnombre.getText());
         hues.setApellido(txtapellido.getText());
         hues.setFecha_nacimiento(Date.valueOf(fecha_nacimiento.getValue()));

@@ -7,10 +7,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
 import javafx.stage.Modality;
-
-import java.awt.event.MouseEvent;
+import javafx.stage.Stage;
 
 public class IngresoReserva {
     public DatePicker salida;
@@ -22,14 +20,14 @@ public class IngresoReserva {
     public void initialize(){
 
 }
-    public void buscarHusesped(MouseEvent mouseEvent) {
+    public void buscarHusesped() {
 
     }
 
-    public void click(javafx.scene.input.MouseEvent mouseEvent) {
+    public void click() {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader (getClass ().getResource ("ver_huespedes.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load ();
+            Parent root1 = fxmlLoader.load ();
             Stage stage = new Stage ();
             stage.initModality (Modality.APPLICATION_MODAL);
             stage.setTitle ("HWI - Login");
