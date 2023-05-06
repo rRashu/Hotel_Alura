@@ -4,7 +4,6 @@ import Accesos_Datos.reservasDAO;
 import ConexionBD.conexionBD;
 import Modelo.Huesped;
 import Modelo.Reserva;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -26,12 +25,6 @@ public class IngresoReserva {
     public Button guardar;
     Huesped seleccionado;
     Connection con;
-    public void initialize(){
-
-}
-    public void buscarHusesped() {
-
-    }
 
     public void click() {
         try {
@@ -39,7 +32,7 @@ public class IngresoReserva {
             Parent root1 = fxmlLoader.load ();
             Stage stage = new Stage ();
             stage.initModality (Modality.APPLICATION_MODAL);
-            stage.setTitle ("HWI - Login");
+            stage.setTitle ("Ver Huespedes");
             stage.setResizable (false);
             stage.setScene (new Scene (root1));
             stage.showAndWait ();
@@ -49,10 +42,9 @@ public class IngresoReserva {
         VerHuespedes verHuespedes = new VerHuespedes();
         seleccionado = verHuespedes.getHuespedSeleccionado();
         llblHuesped.setText("("+seleccionado.getId()+") -> "+seleccionado.getNombre()+" "+seleccionado.getApellido());
-        System.out.println("dio click" + seleccionado);
     }
 
-    public void guardarenBD(ActionEvent actionEvent) {
+    public void guardarenBD() {
         Reserva reserva = new Reserva();
         reserva.setDia_salida(Date.valueOf(salida.getValue()));
         reserva.setDia_entrada(Date.valueOf(entrada.getValue()));

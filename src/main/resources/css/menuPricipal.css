@@ -1,0 +1,24 @@
+.sidebar{
+    -fx-background-color: #030416;
+}
+.sidebar-btn{
+    -fx-background-color: transparent;
+}
+
+.sidebar-btn-text{
+    -fx-text-fill: #757482;
+}
+.sidebar-btn-icon{
+    -fx-fill: #757482;
+}
+.sidebar-btn:hover{
+    -fx-border-width:   0px 3px 0px 0px;-
+    -fx-border-color: #fff;
+    -fx-border-style: solid;
+}
+.sidebar-btn:hover .sidebar-btn-icon{
+    -fx-fill: #fff;
+}
+.sidebar-btn:hover .sidebar-btn-text{
+    -fx-text-fill: #fff
+}

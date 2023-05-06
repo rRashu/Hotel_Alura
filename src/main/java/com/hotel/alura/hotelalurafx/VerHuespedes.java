@@ -50,7 +50,6 @@ public class VerHuespedes {
 
         tabla_cliente.setOnMouseClicked(event -> {
             if (event.getClickCount() == 2) {
-                System.out.println("Doble clic detectado");
                 resultado_lista = tabla_cliente.getSelectionModel().getSelectedItem();
                 Stage stage = (Stage) tabla_cliente.getScene().getWindow();
                 stage.close();

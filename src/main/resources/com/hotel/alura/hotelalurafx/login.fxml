@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Font?>
-<AnchorPane blendMode="MULTIPLY" cache="true" cacheHint="ROTATE" cacheShape="false" centerShape="false" depthTest="DISABLE" focusTraversable="true" pickOnBounds="false" prefHeight="404.0" prefWidth="678.0" scaleShape="false" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.loginController">
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane blendMode="MULTIPLY" cache="true" cacheHint="ROTATE" cacheShape="false" centerShape="false" depthTest="DISABLE" focusTraversable="true" pickOnBounds="false" prefHeight="404.0" prefWidth="678.0" scaleShape="false" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.hotel.alura.hotelalurafx.loginController">
    <ImageView fitHeight="404.0" fitWidth="692.0" pickOnBounds="true" smooth="false">
       <Image url="@../../../../Imagenes/fondo.jpg" />
    </ImageView>

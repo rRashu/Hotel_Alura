@@ -6,7 +6,10 @@ import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -17,6 +20,8 @@ import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
+
+import java.io.IOException;
 
 
 public class loginController {
@@ -63,12 +68,12 @@ public class loginController {
 
             System.out.println(event.getScreenX() - xOffset[0]);
             System.out.println(event.getScreenX() - yOffset[0]);
-
             mover.getScene().getWindow().setX(event.getScreenX() - xOffset[0]);
             System.out.println(event.getScreenX() - xOffset[0]);
             mover.getScene().getWindow().setY(event.getScreenY() - yOffset[0]);
 
         });
+
     }
 
     private void Init2(TextField txtpass, Line myline1, Label lblpass) {
@@ -122,30 +127,35 @@ public class loginController {
         Platform.exit();
     }
 
-
-    public void Acceder() {
+    public void Acceder() throws IOException {
 
         Notifications noti = Notifications.create();
 
         if (txtusuario.getText().equals("admin") && txtpass.getText().equals("admin")) {
-            noti.title("Todo correcto");
-            noti.text("Tamos guapos");
+            Stage stage1 = (Stage) button.getScene().getWindow();
+            stage1.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Menu_Principal.fxml"));
+            Parent root1 = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Menu Principal");
+            stage.setResizable(false);
+            stage.setScene(new Scene(root1));
+            stage.show();
+            noti.title("Acceso Correcto!!");
+            noti.text("Bienvenido " + txtusuario.getText());
             noti.position(Pos.BOTTOM_RIGHT);
+            noti.owner(stage);
             noti.hideAfter(Duration.seconds(3));
             noti.showInformation();
-        } else {
 
+
+        } else {
             noti.title("Algo Fallo");
             noti.text("Estamos Perdidos");
             noti.position(Pos.BOTTOM_RIGHT);
             noti.owner(stage);
             noti.hideAfter(Duration.seconds(3));
             noti.showError();
-
         }
     }
-
-
 }
-
-
