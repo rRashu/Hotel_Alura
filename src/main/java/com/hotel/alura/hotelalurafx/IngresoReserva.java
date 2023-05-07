@@ -7,15 +7,15 @@ import Modelo.Reserva;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.controlsfx.control.Notifications;
 
 import java.sql.Connection;
 import java.sql.Date;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class IngresoReserva {
     public DatePicker salida;
@@ -23,6 +23,7 @@ public class IngresoReserva {
     public DatePicker entrada;
     public Label llblHuesped;
     public Button guardar;
+    public Label valor;
     Huesped seleccionado;
     Connection con;
 
@@ -45,14 +46,50 @@ public class IngresoReserva {
     }
 
     public void guardarenBD() {
-        Reserva reserva = new Reserva();
-        reserva.setDia_salida(Date.valueOf(salida.getValue()));
-        reserva.setDia_entrada(Date.valueOf(entrada.getValue()));
-        reserva.setId_huesped(seleccionado.getId());
-        reserva.setValor_cancelar(120);
-        reserva.setForma_pago("tarjeta");
-        con =  new conexionBD().recuperaConexion();
-        reservasDAO rdao = new reservasDAO(con);
-        rdao.guardar(reserva);
+        if (seleccionado == null || pago.getValue() == null) {
+            Notifications noti = Notifications.create();
+            noti.title("Datos Incorrectos");
+            IngresoHuesped.notificacion(noti);
+        } else {
+            Reserva reserva = new Reserva();
+            reserva.setDia_salida(Date.valueOf(salida.getValue()));
+            reserva.setDia_entrada(Date.valueOf(entrada.getValue()));
+            reserva.setId_huesped(seleccionado.getId());
+            reserva.setValor_cancelar(120);
+            reserva.setForma_pago("tarjeta");
+            con = new conexionBD().recuperaConexion();
+            reservasDAO rdao = new reservasDAO(con);
+            rdao.guardar(reserva);
+            Notifications noti = Notifications.create();
+            IngresoHuesped.notificacionbien(noti);
+        }
+    }
+
+    public void initialize() {
+        entrada.setDayCellFactory(picker -> new DateCell() {
+            @Override
+            public void updateItem(LocalDate date, boolean empty) {
+                super.updateItem(date, empty);
+                LocalDate today = LocalDate.now();
+                setDisable(empty || date.compareTo(today) < 0);
+            }
+        });
+        entrada.setValue(LocalDate.now());
+        salida.setValue(LocalDate.now());
+        entrada.valueProperty().addListener((observable, oldValue, newValue) -> {
+            salida.setDayCellFactory(picker -> new DateCell() {
+                @Override
+                public void updateItem(LocalDate date, boolean empty) {
+                    super.updateItem(date, empty);
+                    setDisable(empty || date.isBefore(newValue));
+                }
+            });
+        });
+        salida.valueProperty().addListener((observable, oldValue, newValue) -> {
+            if (entrada.getValue() != null && newValue != null) {
+                long dias = ChronoUnit.DAYS.between(entrada.getValue(), newValue);
+                valor.setText("$ " + (dias * 8.55));
+            }
+        });
     }
 }

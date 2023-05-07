@@ -20,7 +20,7 @@ import java.util.List;
 public class VerHuespedes {
     Connection con;
     public TableView<Huesped> tabla_cliente = new TableView<>();
-    static private Huesped resultado_lista = null;
+    private static Huesped resultadolista = null;
 
     public void initialize() {
         con = new conexionBD().recuperaConexion();
@@ -50,17 +50,16 @@ public class VerHuespedes {
 
         tabla_cliente.setOnMouseClicked(event -> {
             if (event.getClickCount() == 2) {
-                resultado_lista = tabla_cliente.getSelectionModel().getSelectedItem();
+                resultadolista = tabla_cliente.getSelectionModel().getSelectedItem();
                 Stage stage = (Stage) tabla_cliente.getScene().getWindow();
                 stage.close();
-
             }
         });
     }
 
     public Huesped getHuespedSeleccionado() {
 
-        return resultado_lista;
+        return resultadolista;
 
     }
 }

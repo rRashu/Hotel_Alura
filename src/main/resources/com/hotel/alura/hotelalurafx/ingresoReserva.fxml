@@ -35,7 +35,7 @@
       <effect>
          <Glow />
       </effect></Label>
-   <Label contentDisplay="RIGHT" ellipsisString="" layoutX="259.0" layoutY="430.0" text="Valor A Cancelar:" textFill="#1d2123" textOverrun="CLIP">
+   <Label contentDisplay="RIGHT" ellipsisString="" layoutX="233.0" layoutY="430.0" text="Valor A Cancelar:" textFill="#1d2123" textOverrun="CLIP">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
@@ -44,7 +44,7 @@
       </effect>
    </Label>
    <DatePicker fx:id="entrada" editable="false" layoutX="221.0" layoutY="144.0" prefHeight="35.0" prefWidth="301.0" promptText="Seleccione" stylesheets="@../../../../css/DateP.css" />
-   <Label contentDisplay="RIGHT" ellipsisString="" layoutX="441.0" layoutY="430.0" text="\$0.00" textFill="#1d2123" textOverrun="CLIP">
+   <Label fx:id="valor" contentDisplay="RIGHT" ellipsisString="" layoutX="414.0" layoutY="430.0" text="\$8.55" textFill="#1d2123" textOverrun="CLIP">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
@@ -61,7 +61,7 @@
       </effect>
    </Label>
    <Button layoutX="441.0" layoutY="83.0" mnemonicParsing="false" onAction="#click" onMouseClicked="#click" text="Seleccionar" />
-   <Button fx:id="guardar" defaultButton="true" layoutX="67.0" layoutY="413.0" mnemonicParsing="false" onAction="#guardarenBD" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: white;" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Button" textAlignment="CENTER" />
+   <Button fx:id="guardar" defaultButton="true" layoutX="32.0" layoutY="415.0" mnemonicParsing="false" onAction="#guardarenBD" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: white;" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Button" textAlignment="CENTER" />
    <Label fx:id="llblHuesped" layoutX="203.0" layoutY="81.0" prefHeight="26.0" prefWidth="216.0" text="Huesped no seleccionado" textFill="#1d2123">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />

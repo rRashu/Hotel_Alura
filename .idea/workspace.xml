@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="Graba huesped y reservas por medio de busqueda(falta diseño y validacion)">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Menu_Principal.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/menuPricipal.css" afterDir="false" />
+    <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="Creacion de menu principal y llama a ingresar">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Imagenes/aH-150px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Imagenes/mas.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoHuesped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoHuesped.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoReserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/MenuPrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerHuespedes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerHuespedes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/menuPrincipal.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Menu_Principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Menu_Principal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoHuesped.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoHuesped.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoReserva.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoReserva.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/menuPricipal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/menuPrincipal.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a7fb3013-7325-4417-aa7c-d9d7899e06f8" />
+        <option name="url" value="https://github.com/rRashu/Hotel_Alura" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerHuespedes.java" root0="FORCE_HIGHLIGHTING" />
@@ -79,7 +92,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
@@ -111,11 +126,11 @@
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\com\hotel\alura\hotelalurafx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\Imagenes" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\css" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\com\hotel\alura\hotelalurafx" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\java\javafx" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura" />
-      <recent name="C:\intelij\Hotel Alura\HotelAluraFx" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="sample" />
@@ -200,7 +215,9 @@
       <workItem from="1683394367291" duration="723000" />
       <workItem from="1683396328522" duration="291000" />
       <workItem from="1683397358339" duration="5191000" />
-      <workItem from="1683408490434" duration="74000" />
+      <workItem from="1683408490434" duration="1270000" />
+      <workItem from="1683430167359" duration="7736000" />
+      <workItem from="1683438106616" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="agregado Añadir huesped y visualizar - sin diseño">
       <created>1682870203413</created>
@@ -237,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683318979198</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Creacion de menu principal y llama a ingresar">
+      <created>1683408769744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683408769745</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +299,8 @@
     <MESSAGE value="creado reservas ya graba y muestra aun falta enviar a la base de datos" />
     <MESSAGE value="creado reservas ya graba y muestra aun falta enviar a la base de datos (no ejecutaba)" />
     <MESSAGE value="Graba huesped y reservas por medio de busqueda(falta diseño y validacion)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Graba huesped y reservas por medio de busqueda(falta diseño y validacion)" />
+    <MESSAGE value="Creacion de menu principal y llama a ingresar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de menu principal y llama a ingresar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

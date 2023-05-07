@@ -12,7 +12,7 @@
     -fx-fill: #757482;
 }
 .sidebar-btn:hover{
-    -fx-border-width:   0px 3px 0px 0px;-
+    -fx-border-width: 0px 3px 0px 0px;
     -fx-border-color: #fff;
     -fx-border-style: solid;
 }

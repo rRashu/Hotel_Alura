@@ -6,61 +6,63 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="645.0" stylesheets="@../../../../css/menuPricipal.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.MenuPrincipal">
-   <Pane prefHeight="467.0" prefWidth="168.0" styleClass="sidebar">
-      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="38.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../../../../../../../../OneDrive/Escritorio/Dashboard/src/images/logo.png" />
+<AnchorPane id="AnchorPane" prefHeight="443.0" prefWidth="694.0" stylesheets="@../../../../css/menuPrincipal.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.hotel.alura.hotelalurafx.MenuPrincipal">
+   <Pane prefHeight="454.0" prefWidth="168.0" styleClass="sidebar">
+      <ImageView fitHeight="198.0" fitWidth="204.0" layoutX="-15.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../../Imagenes/hotel.png" />
       </ImageView>
-      <Label layoutX="13.0" layoutY="59.0" text="wildscape" textFill="WHITE">
+      <Label layoutX="22.0" layoutY="173.0" text="Hotel Alura" textFill="WHITE">
          <font>
-            <Font name="Algerian" size="14.0" />
+            <Font name="Algerian" size="19.0" />
          </font>
       </Label>
-      <HBox layoutY="133.0" prefHeight="20.0" prefWidth="136.0" styleClass="sidebar-btn">
-         <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+      <HBox layoutY="255.0" prefHeight="33.0" prefWidth="168.0" styleClass="sidebar-btn">
+         <ImageView fitHeight="28.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
             <HBox.margin>
                <Insets left="10.0" />
             </HBox.margin>
-            <Image url="@../../../../../../../../../OneDrive/Escritorio/Dashboard/src/images/icons8_restaurant_menu_50px.png" />
+            <Image url="@../../../../Imagenes/mas.png" />
          </ImageView>
-         <Label fx:id="Ingreso" prefHeight="15.0" prefWidth="110.0" text="    Ingresar" textFill="#757482">
+         <Label fx:id="Ingreso" prefHeight="50.0" prefWidth="178.0" text="    Ingresar" textFill="#757482">
             <font>
                <Font name="Arial" size="12.0" />
             </font>
          </Label>
       </HBox>
-      <HBox layoutY="172.0" prefHeight="20.0" prefWidth="100.0" styleClass="sidebar-btn">
-         <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
-            <HBox.margin>
-               <Insets left="10.0" />
-            </HBox.margin>
-            <Image url="@../../../../../../../../../OneDrive/Escritorio/Dashboard/src/images/icons8_cocktail_50px.png" />
-         </ImageView>
-         <Label text="Drinks" textFill="#757482">
-            <font>
-               <Font name="Arial" size="12.0" />
-            </font>
-            <HBox.margin>
-               <Insets left="10.0" />
-            </HBox.margin>
-         </Label>
+      <HBox layoutY="297.0" prefHeight="33.0" prefWidth="168.0" styleClass="sidebar-btn">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../../../Imagenes/mas.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Ingreso1" prefHeight="50.0" prefWidth="178.0" text="    Reporte" textFill="#757482">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
       </HBox>
-      <HBox layoutX="1.0" layoutY="211.0" prefHeight="20.0" prefWidth="100.0" styleClass="sidebar-btn">
-         <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
-            <HBox.margin>
-               <Insets left="10.0" />
-            </HBox.margin>
-            <Image url="@../../../../../../../../../OneDrive/Escritorio/Dashboard/src/images/icons8_cocktail_50px.png" />
-         </ImageView>
-         <Label styleClass="sidebar-btn" text="Fast Food" textFill="#757482">
-            <font>
-               <Font name="Arial" size="12.0" />
-            </font>
-            <HBox.margin>
-               <Insets left="10.0" />
-            </HBox.margin>
-         </Label>
+      <HBox layoutY="337.0" prefHeight="33.0" prefWidth="168.0" styleClass="sidebar-btn">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../../../Imagenes/mas.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Ingreso2" prefHeight="50.0" prefWidth="178.0" text="    Aun no se que poner aqui" textFill="#757482">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
       </HBox>
    </Pane>
-   <AnchorPane fx:id="otras" layoutX="143.0" layoutY="-2.0" prefHeight="469.0" prefWidth="546.0" />
+   <AnchorPane fx:id="otras" layoutX="168.0" layoutY="-1.0" prefHeight="454.0" prefWidth="525.0" style="-fx-background-color: #4444;" />
 </AnchorPane>
