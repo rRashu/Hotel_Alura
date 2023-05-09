@@ -3,6 +3,8 @@ package Accesos_Datos;
 import Modelo.Reserva;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class reservasDAO {
 private final Connection con;
@@ -22,7 +24,7 @@ private final Connection con;
             try (statement) {
                 statement.setDate(1, reserva.getDia_entrada());
                 statement.setDate(2, reserva.getDia_salida());
-                statement.setDouble(3, reserva.getValor_cancelar());
+                statement.setDouble(3, reserva.getValor());
                 statement.setString(4, reserva.getForma_pago());
                 statement.setInt(5, reserva.getId_huesped());
                 statement.execute();
@@ -38,6 +40,58 @@ private final Connection con;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public List<Reserva> listar() {
+        List<Reserva> resultado = new ArrayList<>();
+
+        try {
+            final PreparedStatement statement = con
+                    .prepareStatement("SELECT id, fecha_entrada, fecha_salida, valor, forma_pago, id_huesped FROM hotel_alura.reservas");
+
+            try (statement) {
+                statement.execute();
+
+                final ResultSet resultSet = statement.getResultSet();
+
+                try (resultSet) {
+                    while (resultSet.next()) {
+                        resultado.add(new Reserva(
+                                resultSet.getInt("id"),
+                                resultSet.getDate("fecha_entrada"),
+                                resultSet.getDate("fecha_salida"),
+                                resultSet.getDouble("valor"),
+                                resultSet.getString("forma_pago"),
+                                resultSet.getInt("id_huesped")));
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return resultado;
+    }
+
+    public List<Reserva> resultadoBusqueda(String busqueda) {
+        List<Reserva> resultado = new ArrayList<>();
+        try {
+            final PreparedStatement statement = con
+                    .prepareStatement("SELECT * FROM hotel_alura.reservas WHERE id LIKE '%" + busqueda + "%' OR fecha_entrada LIKE '%" + busqueda + "%' OR fecha_salida LIKE '%" + busqueda + "%' OR valor LIKE '%" + busqueda + "%'OR forma_pago LIKE '%" + busqueda + "%' OR id_huesped LIKE '%" + busqueda + "%'");
+            statement.execute();
+            final ResultSet resultSet = statement.getResultSet();
+            while (resultSet.next()) {
+                resultado.add(new Reserva(
+                        resultSet.getInt("id"),
+                        resultSet.getDate("fecha_entrada"),
+                        resultSet.getDate("fecha_salida"),
+                        resultSet.getDouble("valor"),
+                        resultSet.getString("forma_pago"),
+                        resultSet.getInt("id_huesped")));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return resultado;
     }
 
 }

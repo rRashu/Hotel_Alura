@@ -73,4 +73,26 @@ private final Connection con;
         }
         return resultado;
     }
+
+    public List<Huesped> resultadoBusqueda(String busqueda) {
+        List<Huesped> resultado = new ArrayList<>();
+        try {
+            final PreparedStatement statement = con
+                    .prepareStatement("SELECT * FROM hotel_alura.huespedes WHERE id LIKE '%" + busqueda + "%' OR nombre LIKE '%" + busqueda + "%' OR apellido LIKE '%" + busqueda + "%' OR fecha_nacimiento LIKE '%" + busqueda + "%'OR nacionalidad LIKE '%" + busqueda + "%' OR telefono LIKE '%" + busqueda + "%'");
+            statement.execute();
+            final ResultSet resultSet = statement.getResultSet();
+            while (resultSet.next()) {
+                resultado.add(new Huesped(
+                        resultSet.getInt("id"),
+                        resultSet.getString("nombre"),
+                        resultSet.getString("apellido"),
+                        resultSet.getDate("fecha_nacimiento"),
+                        resultSet.getString("nacionalidad"),
+                        resultSet.getString("telefono")));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return resultado;
+    }
 }

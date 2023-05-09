@@ -18,8 +18,6 @@ public class conexionBD {
         comboPooledDataSource.setPassword("1234");
         comboPooledDataSource.setMaxPoolSize(10);
         this.dataSource = comboPooledDataSource;
-
-
     }
 
     public Connection recuperaConexion() {

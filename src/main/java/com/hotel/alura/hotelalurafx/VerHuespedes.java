@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
@@ -18,6 +19,7 @@ import java.util.List;
 
 
 public class VerHuespedes {
+    public TextField buscar;
     Connection con;
     public TableView<Huesped> tabla_cliente = new TableView<>();
     private static Huesped resultadolista = null;
@@ -55,6 +57,12 @@ public class VerHuespedes {
                 stage.close();
             }
         });
+        buscar.setOnKeyReleased(event -> {
+            String criterioBusqueda = buscar.getText();
+            huespedesDAO hudao = new huespedesDAO(con);
+            tabla_cliente.setItems(FXCollections.observableArrayList(hudao.resultadoBusqueda(criterioBusqueda)));
+        });
+
     }
 
     public Huesped getHuespedSeleccionado() {

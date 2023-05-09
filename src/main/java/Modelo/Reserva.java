@@ -9,14 +9,18 @@ public class Reserva {
     private Date dia_entrada;
     private Date dia_salida;
     private String forma_pago;
-    private double valor_cancelar;
+    private Double valor;
 
     public Reserva() {
-        this.id_huesped = id_huesped;
-        this.dia_entrada = dia_entrada;
-        this.dia_salida = dia_salida;
-        this.forma_pago = forma_pago;
-        this.valor_cancelar = valor_cancelar;
+    }
+
+    public Reserva(int id, Date fechaEntrada, Date fechaSalida, Double valor, String formaPago, int idHuesped) {
+    this.id= id;
+    this.dia_entrada= fechaEntrada;
+    this.dia_salida= fechaSalida;
+    this.valor =valor;
+    this.forma_pago=formaPago;
+    this.id_huesped= idHuesped;
     }
 
     public int getId() {
@@ -59,11 +63,11 @@ public class Reserva {
         this.forma_pago = forma_pago;
     }
 
-    public double getValor_cancelar() {
-        return valor_cancelar;
+    public Double getValor() {
+        return valor;
     }
 
-    public void setValor_cancelar(double valor_cancelar) {
-        this.valor_cancelar = valor_cancelar;
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 }

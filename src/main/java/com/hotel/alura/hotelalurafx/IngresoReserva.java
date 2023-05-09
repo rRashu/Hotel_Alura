@@ -14,6 +14,7 @@ import org.controlsfx.control.Notifications;
 
 import java.sql.Connection;
 import java.sql.Date;
+import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
@@ -24,8 +25,11 @@ public class IngresoReserva {
     public Label llblHuesped;
     public Button guardar;
     public Label valor;
+    String[] formaPago = {"efectivo","tarjeta de crédito","transferencia bancaria"};
     Huesped seleccionado;
     Connection con;
+    private double dias= 8.55;
+    DecimalFormat df = new DecimalFormat("#.##");
 
     public void click() {
         try {
@@ -42,8 +46,9 @@ public class IngresoReserva {
         }
         VerHuespedes verHuespedes = new VerHuespedes();
         seleccionado = verHuespedes.getHuespedSeleccionado();
+        if (seleccionado!= null){
         llblHuesped.setText("("+seleccionado.getId()+") -> "+seleccionado.getNombre()+" "+seleccionado.getApellido());
-    }
+    }}
 
     public void guardarenBD() {
         if (seleccionado == null || pago.getValue() == null) {
@@ -55,8 +60,8 @@ public class IngresoReserva {
             reserva.setDia_salida(Date.valueOf(salida.getValue()));
             reserva.setDia_entrada(Date.valueOf(entrada.getValue()));
             reserva.setId_huesped(seleccionado.getId());
-            reserva.setValor_cancelar(120);
-            reserva.setForma_pago("tarjeta");
+            reserva.setValor(Double.parseDouble(df.format(dias * 8.55)));
+            reserva.setForma_pago(pago.getValue());
             con = new conexionBD().recuperaConexion();
             reservasDAO rdao = new reservasDAO(con);
             rdao.guardar(reserva);
@@ -66,6 +71,9 @@ public class IngresoReserva {
     }
 
     public void initialize() {
+        for (String forma_Pago : formaPago) {
+            pago.getItems().add(forma_Pago);
+        }
         entrada.setDayCellFactory(picker -> new DateCell() {
             @Override
             public void updateItem(LocalDate date, boolean empty) {
@@ -87,7 +95,7 @@ public class IngresoReserva {
         });
         salida.valueProperty().addListener((observable, oldValue, newValue) -> {
             if (entrada.getValue() != null && newValue != null) {
-                long dias = ChronoUnit.DAYS.between(entrada.getValue(), newValue);
+                dias = ChronoUnit.DAYS.between(entrada.getValue(), newValue);
                 valor.setText("$ " + (dias * 8.55));
             }
         });
