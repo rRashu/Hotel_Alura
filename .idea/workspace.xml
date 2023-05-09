@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="validacion de datos completada">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerReserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ver_reserva.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d6f77a40-29c0-4da8-947c-a9cf178be385.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d6f77a40-29c0-4da8-947c-a9cf178be385.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="ver Reserva">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel alura.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hotel alura.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Accesos_Datos/huespedesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accesos_Datos/huespedesDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Accesos_Datos/reservasDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accesos_Datos/reservasDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConexionBD/conexionBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConexionBD/conexionBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Reserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoReserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerHuespedes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerHuespedes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ver_huespedes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ver_huespedes.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +215,7 @@
       <workItem from="1683578332508" duration="4708000" />
       <workItem from="1683601758101" duration="821000" />
       <workItem from="1683603249418" duration="1284000" />
-      <workItem from="1683604594192" duration="7238000" />
+      <workItem from="1683604594192" duration="7550000" />
     </task>
     <task id="LOCAL-00001" summary="agregado Añadir huesped y visualizar - sin diseño">
       <created>1682870203413</created>
@@ -279,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683438890233</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ver Reserva">
+      <created>1683612218289</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683612218289</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +293,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -319,7 +313,8 @@
     <MESSAGE value="Graba huesped y reservas por medio de busqueda(falta diseño y validacion)" />
     <MESSAGE value="Creacion de menu principal y llama a ingresar" />
     <MESSAGE value="validacion de datos completada" />
-    <option name="LAST_COMMIT_MESSAGE" value="validacion de datos completada" />
+    <MESSAGE value="ver Reserva" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver Reserva" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
