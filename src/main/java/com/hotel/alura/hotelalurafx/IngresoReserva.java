@@ -4,6 +4,7 @@ import Accesos_Datos.reservasDAO;
 import ConexionBD.conexionBD;
 import Modelo.Huesped;
 import Modelo.Reserva;
+import Util.Util;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -55,8 +56,7 @@ public class IngresoReserva {
     public void guardarenBD() {
         if (seleccionado == null || pago.getValue() == null) {
             Notifications noti = Notifications.create();
-            noti.title("Datos Incorrectos");
-            IngresoHuesped.notificacion(noti);
+            Util.notificacion(noti,"Datos Incorrectos");
         } else {
             Reserva reserva = new Reserva();
             reserva.setDia_salida(Date.valueOf(salida.getValue()));
@@ -68,7 +68,7 @@ public class IngresoReserva {
             reservasDAO rdao = new reservasDAO(con);
             rdao.guardar(reserva);
             Notifications noti = Notifications.create();
-            IngresoHuesped.notificacionbien(noti);
+            Util.notificacionbien(noti);
         }
     }
 

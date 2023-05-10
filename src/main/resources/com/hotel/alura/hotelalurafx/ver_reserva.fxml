@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="502.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.VerReserva">
-    <TableView fx:id="tabla_cliente" layoutY="143.0" prefHeight="358.0" prefWidth="740.0" />
+<AnchorPane prefHeight="469.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.VerReserva">
+    <TableView fx:id="tabla_cliente" layoutY="85.0" prefHeight="383.0" prefWidth="558.0" />
    <TextField fx:id="buscar" layoutX="413.0" layoutY="36.0" promptText="Busqueda" />
 </AnchorPane>

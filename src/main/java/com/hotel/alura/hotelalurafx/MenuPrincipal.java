@@ -48,6 +48,7 @@ public class MenuPrincipal {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("ingresoReserva.fxml"));
                 Node formularioSecundario = loader.load();
+                otras.getChildren().clear();
                 otras.getChildren().add(formularioSecundario);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -58,6 +59,7 @@ public class MenuPrincipal {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("ingresoHuesped.fxml"));
                 Node formularioSecundario = loader.load();
+                otras.getChildren().clear();
                 otras.getChildren().add(formularioSecundario);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -68,6 +70,7 @@ public class MenuPrincipal {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("ver_reserva.fxml"));
                 Node formularioSecundario = loader.load();
+                otras.getChildren().clear();
                 otras.getChildren().add(formularioSecundario);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -78,6 +81,7 @@ public class MenuPrincipal {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("ver_huespedes.fxml"));
                 Node formularioSecundario = loader.load();
+                otras.getChildren().clear();
                 otras.getChildren().add(formularioSecundario);
             } catch (IOException e) {
                 e.printStackTrace();

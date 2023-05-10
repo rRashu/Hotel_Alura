@@ -3,13 +3,11 @@ package com.hotel.alura.hotelalurafx;
 import Accesos_Datos.huespedesDAO;
 import ConexionBD.conexionBD;
 import Modelo.Huesped;
-import javafx.geometry.Pos;
+import Util.Util;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-import javafx.stage.Window;
-import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
 
 import java.sql.Connection;
@@ -36,8 +34,7 @@ Connection con;
     public void Acceder() {
         if (txtnombre.getText().isBlank() || txtapellido.getText().isBlank() || txttelefono.getText().isBlank() || fecha_nacimiento.getValue() == null) {
             Notifications noti = Notifications.create();
-            noti.title("Campos Vacios");
-            notificacion(noti);
+            Util.notificacion(noti,"Campos Vacios");
         } else {
             Huesped hues = new Huesped();
             hues.setNombre(txtnombre.getText());
@@ -49,27 +46,10 @@ Connection con;
             huespedesDAO hdao = new huespedesDAO(con);
             hdao.guardar(hues);
             Notifications noti = Notifications.create();
-            notificacionbien(noti);
+            Util.notificacionbien(noti);
 
         }
     }
 
-    static void notificacion(Notifications noti) {
-        noti.text("Verifique los Valores y vuelva a Intentar");
-        noti.position(Pos.TOP_RIGHT);
-        noti.owner(Window.getWindows().stream().filter(Window::isFocused).findFirst().orElse(null));
-        noti.hideAfter(Duration.seconds(3));
-        noti.darkStyle();
-        noti.showWarning();
-    }
 
-    static void notificacionbien(Notifications noti) {
-        noti.title("Datos Guardados");
-        noti.text("Los Datos fueron guardados Correctamente");
-        noti.position(Pos.TOP_RIGHT);
-        noti.owner(Window.getWindows().stream().filter(Window::isFocused).findFirst().orElse(null));
-        noti.hideAfter(Duration.seconds(3));
-        noti.darkStyle();
-        noti.showInformation();
-    }
 }

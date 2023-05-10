@@ -6,10 +6,14 @@ import Modelo.Huesped;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.sql.Connection;
@@ -24,6 +28,7 @@ public class VerHuespedes {
     public TableView<Huesped> tabla_cliente = new TableView<>();
     private static Huesped resultadolista = null;
     static boolean Cerrar = false;
+
 
     public void cerrar(boolean cerrar){
         Cerrar = cerrar;
@@ -55,16 +60,30 @@ public class VerHuespedes {
         tabla_cliente.setItems(dato);
 
         tabla_cliente.setOnMouseClicked(event -> {
+            if (event.getClickCount() == 1) {
+                Reporte a = new Reporte();
+                a.idSeleccionado(tabla_cliente.getSelectionModel().getSelectedItem().getId());
+            }
             if (event.getClickCount() == 2) {
                 resultadolista = tabla_cliente.getSelectionModel().getSelectedItem();
                 Stage stage = (Stage) tabla_cliente.getScene().getWindow();
-                if (Cerrar){
 
-                    stage.close();
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Reporte.fxml"));
+                    Parent root1 = fxmlLoader.load();
+                    Stage stage1 = new Stage();
+                    stage1.initModality(Modality.APPLICATION_MODAL);
+                    stage1.setTitle("Ver Huespedes");
+                    stage1.setResizable(false);
+                    stage1.setScene(new Scene(root1));
+                    stage1.showAndWait();
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-                else{
 
-                    System.out.println("no cierra");
+
+                if (Cerrar) {
+                    stage.close();
                 }
 
             }
@@ -82,4 +101,6 @@ public class VerHuespedes {
         return resultadolista;
 
     }
+
+
 }
