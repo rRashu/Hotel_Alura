@@ -1,6 +1,7 @@
 package Accesos_Datos;
 
 import Modelo.Huesped;
+import Modelo.Reserva;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -93,6 +94,77 @@ private final Connection con;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        return resultado;
+    }
+
+    public int modificar(Huesped huesped) {
+        try {
+            final PreparedStatement statement = con.prepareStatement("UPDATE hotel_alura.huespedes SET " + " nombre = ?, " + " apellido = ?," + " fecha_nacimiento = ?," + " nacionalidad  = ?," + " telefono = ?" + " WHERE id = ?");
+
+            try (statement) {
+                statement.setString(1, huesped.getNombre());
+                statement.setString(2, huesped.getApellido());
+                statement.setDate(3, huesped.getFecha_nacimiento());
+                statement.setString(4, huesped.getNacionalidad());
+                statement.setString(5, huesped.getTelefono());
+                statement.setInt(5, huesped.getId());
+                statement.execute();
+
+                return statement.getUpdateCount();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<Huesped> listarConReserva(int idbuscar) {
+        List<Huesped> resultado = new ArrayList<>();
+
+        try {
+            final PreparedStatement statement = con
+                    .prepareStatement("SELECT h.id, h.nombre, h.apellido, h.fecha_nacimiento, h.nacionalidad, h.telefono, r.id, r.fecha_entrada, r.fecha_salida, r.valor, r.forma_pago, r.id_huesped "
+                            + " FROM hotel_alura.huespedes h LEFT JOIN  hotel_alura.reservas r"
+                            + "  ON h.id = r.id_huesped WHERE h.id= " + idbuscar);
+
+            try (statement) {
+                final ResultSet resultSet = statement.executeQuery();
+
+                try (resultSet) {
+                    while (resultSet.next()) {
+                        int huespedid = resultSet.getInt("h.id");
+                        String huespednombre = resultSet.getString("h.nombre");
+                        String huespedapellido = resultSet.getString("h.apellido");
+                        Date huespedfechanacimiento = resultSet.getDate("h.fecha_nacimiento");
+                        String huespednacionalidad = resultSet.getString("h.nacionalidad");
+                        String huespedntelefono = resultSet.getString("h.telefono");
+
+                        Huesped huesped = resultado
+                                .stream()
+                                .filter(cat -> cat.getIdinter().equals(huespedid))
+                                .findAny().orElseGet(() -> {
+                                    Huesped cat = new Huesped(
+                                            huespedid, huespednombre, huespedapellido, huespedfechanacimiento,
+                                            huespednacionalidad, huespedntelefono);
+                                    resultado.add(cat);
+                                    return cat;
+                                });
+
+                        Reserva reserva = new Reserva(
+                                resultSet.getInt("r.id"),
+                                resultSet.getDate("r.fecha_entrada"),
+                                resultSet.getDate("r.fecha_salida"),
+                                resultSet.getDouble("r.valor"),
+                                resultSet.getString("r.forma_pago"),
+                                resultSet.getInt("r.id_huesped"));
+
+                        huesped.agregar(reserva);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
         return resultado;
     }
 }

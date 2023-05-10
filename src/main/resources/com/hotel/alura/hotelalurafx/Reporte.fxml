@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.Reporte">
+   <Pane layoutX="43.0" layoutY="20.0" prefHeight="200.0" prefWidth="494.0" style="-fx-background-color: #f4f4f9;">
+      <TextField fx:id="nombre" layoutX="26.0" layoutY="23.0" prefHeight="26.0" prefWidth="153.0" promptText="Nombre" />
+      <TextField fx:id="apellido" layoutX="26.0" layoutY="87.0" prefHeight="26.0" prefWidth="153.0" promptText="Apellido" />
+      <TextField fx:id="telefono" layoutX="271.0" layoutY="134.0" prefHeight="26.0" prefWidth="153.0" promptText="Telefono" />
+      <ComboBox fx:id="nacionalidad" layoutX="271.0" layoutY="73.0" prefHeight="28.0" prefWidth="198.0" />
+      <DatePicker fx:id="fecha_nacimiento" layoutX="271.0" layoutY="23.0" prefHeight="26.0" prefWidth="198.0" />
+   </Pane>
+   <TableView fx:id="tabla_cliente" editable="true" layoutX="53.0" layoutY="247.0" prefHeight="138.0" prefWidth="494.0" />
+</AnchorPane>

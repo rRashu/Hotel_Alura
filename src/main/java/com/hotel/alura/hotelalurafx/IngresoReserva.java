@@ -38,6 +38,8 @@ public class IngresoReserva {
             Stage stage = new Stage ();
             stage.initModality (Modality.APPLICATION_MODAL);
             stage.setTitle ("Ver Huespedes");
+            VerHuespedes a = fxmlLoader.getController();
+            a.cerrar(true);
             stage.setResizable (false);
             stage.setScene (new Scene (root1));
             stage.showAndWait ();
@@ -79,20 +81,18 @@ public class IngresoReserva {
             public void updateItem(LocalDate date, boolean empty) {
                 super.updateItem(date, empty);
                 LocalDate today = LocalDate.now();
-                setDisable(empty || date.compareTo(today) < 0);
+                setDisable(empty || date.isBefore(today));
             }
         });
         entrada.setValue(LocalDate.now());
         salida.setValue(LocalDate.now());
-        entrada.valueProperty().addListener((observable, oldValue, newValue) -> {
-            salida.setDayCellFactory(picker -> new DateCell() {
-                @Override
-                public void updateItem(LocalDate date, boolean empty) {
-                    super.updateItem(date, empty);
-                    setDisable(empty || date.isBefore(newValue));
-                }
-            });
-        });
+        entrada.valueProperty().addListener((observable, oldValue, newValue) -> salida.setDayCellFactory(picker -> new DateCell() {
+            @Override
+            public void updateItem(LocalDate date, boolean empty) {
+                super.updateItem(date, empty);
+                setDisable(empty || date.isBefore(newValue));
+            }
+        }));
         salida.valueProperty().addListener((observable, oldValue, newValue) -> {
             if (entrada.getValue() != null && newValue != null) {
                 dias = ChronoUnit.DAYS.between(entrada.getValue(), newValue);

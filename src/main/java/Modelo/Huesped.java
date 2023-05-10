@@ -1,6 +1,8 @@
 package Modelo;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Huesped {
 
@@ -11,6 +13,28 @@ public class Huesped {
     private Date fecha_nacimiento;
     private String nacionalidad;
     private String telefono;
+
+    @Override
+    public String toString() {
+        return "Huesped{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", fecha_nacimiento=" + fecha_nacimiento +
+                ", nacionalidad='" + nacionalidad + '\'' +
+                ", telefono='" + telefono + '\'' +
+                '}';
+    }
+
+    public List<Reserva> getReservas() {
+        return reservas;
+    }
+
+    public void setReservas(List<Reserva> reservas) {
+        this.reservas = reservas;
+    }
+
+    List<Reserva> reservas = new ArrayList<>();
 
     public Huesped(int id, String nombre, String apellido, Date fechaNacimiento, String nacionalidad, String telefono) {
         this.id= id;
@@ -26,9 +50,14 @@ public class Huesped {
     }
 
 
-
+    public void agregar(Reserva reserva) {
+        this.reservas.add(reserva);
+    }
     public int getId() {
         return id;
+    }
+    public Integer getIdinter() {
+        return (Integer) id;
     }
 
     public void setId(int id) {

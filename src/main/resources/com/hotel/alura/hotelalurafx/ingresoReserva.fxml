@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane style="-fx-background-color: rgb(179, 122, 122);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.IngresoReserva">
+<AnchorPane style="-fx-background-color: rgb(179, 122, 122);" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.hotel.alura.hotelalurafx.IngresoReserva">
 
    <Label layoutX="9.0" prefHeight="68.0" prefWidth="315.0" text="Registrar Reservas " textAlignment="CENTER" textOverrun="CLIP">
       <font>

@@ -14,6 +14,18 @@ public class Reserva {
     public Reserva() {
     }
 
+    @Override
+    public String toString() {
+        return "Reserva{" +
+                "id=" + id +
+                ", id_huesped=" + id_huesped +
+                ", dia_entrada=" + dia_entrada +
+                ", dia_salida=" + dia_salida +
+                ", forma_pago='" + forma_pago + '\'' +
+                ", valor=" + valor +
+                '}';
+    }
+
     public Reserva(int id, Date fechaEntrada, Date fechaSalida, Double valor, String formaPago, int idHuesped) {
     this.id= id;
     this.dia_entrada= fechaEntrada;

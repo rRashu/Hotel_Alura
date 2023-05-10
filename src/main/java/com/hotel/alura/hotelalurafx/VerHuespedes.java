@@ -23,7 +23,11 @@ public class VerHuespedes {
     Connection con;
     public TableView<Huesped> tabla_cliente = new TableView<>();
     private static Huesped resultadolista = null;
+    static boolean Cerrar = false;
 
+    public void cerrar(boolean cerrar){
+        Cerrar = cerrar;
+    }
     public void initialize() {
         con = new conexionBD().recuperaConexion();
         huespedesDAO hdao = new huespedesDAO(con);
@@ -54,7 +58,15 @@ public class VerHuespedes {
             if (event.getClickCount() == 2) {
                 resultadolista = tabla_cliente.getSelectionModel().getSelectedItem();
                 Stage stage = (Stage) tabla_cliente.getScene().getWindow();
-                stage.close();
+                if (Cerrar){
+
+                    stage.close();
+                }
+                else{
+
+                    System.out.println("no cierra");
+                }
+
             }
         });
         buscar.setOnKeyReleased(event -> {
