@@ -14,8 +14,6 @@ private final Connection con;
         this.con = con;
     }
 
-
-
     public void guardar(Huesped huesped) {
         try {
             PreparedStatement statement;
@@ -97,7 +95,7 @@ private final Connection con;
         return resultado;
     }
 
-    public int modificar(Huesped huesped) {
+    public void modificar(Huesped huesped) {
         try {
             final PreparedStatement statement = con.prepareStatement("UPDATE hotel_alura.huespedes SET " + " nombre = ?, " + " apellido = ?," + " fecha_nacimiento = ?," + " nacionalidad  = ?," + " telefono = ?" + " WHERE id = ?");
 
@@ -107,10 +105,10 @@ private final Connection con;
                 statement.setDate(3, huesped.getFecha_nacimiento());
                 statement.setString(4, huesped.getNacionalidad());
                 statement.setString(5, huesped.getTelefono());
-                statement.setInt(5, huesped.getId());
+                statement.setInt(6, huesped.getId());
                 statement.execute();
 
-                return statement.getUpdateCount();
+
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -166,5 +164,18 @@ private final Connection con;
         }
 
         return resultado;
+    }
+
+    public void eliminar(int id) {
+        try {
+            final PreparedStatement statement = con.prepareStatement("DELETE FROM hotel_alura.huespedes WHERE id = ?");
+
+            try (statement) {
+                statement.setInt(1, id);
+                statement.execute();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -82,6 +82,8 @@ public class MenuPrincipal {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("ver_huespedes.fxml"));
                 Node formularioSecundario = loader.load();
                 otras.getChildren().clear();
+                VerHuespedes a = new VerHuespedes();
+                a.cerrar(false);
                 otras.getChildren().add(formularioSecundario);
             } catch (IOException e) {
                 e.printStackTrace();

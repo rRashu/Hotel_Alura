@@ -1,0 +1,35 @@
+.alert .content {
+    -fx-font-size: 12px;
+}
+
+.alert {
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial";
+    -fx-background-color: #ce0909;
+    -fx-text-fill: #910f0f;
+    -fx-border-color: #831717;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+.dialog-pane{
+    -fx-border-color:black;
+    -fx-border-width:2px;
+}
+
+
+.dialog-pane > .button-bar > .container {
+    -fx-background-color:black;
+}
+
+.dialog-pane > .content.label {
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+    -fx-background-color: yellow;
+    -fx-text-fill:black;
+    -fx-font-size:15px;
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane :hover .header-panel {
+    -fx-background-color: black;
+}
+

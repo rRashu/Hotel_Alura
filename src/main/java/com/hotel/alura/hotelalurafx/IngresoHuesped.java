@@ -20,16 +20,14 @@ IngresoHuesped {
     public TextField txtnombre;
     public TextField txtapellido;
     public TextField txttelefono;
-    String[] nacionalidades = {"afgano-afgana", "alemán-", "alemana", "árabe-árabe", "argentino-argentina", "australiano-australiana", "belga-belga", "boliviano-boliviana", "brasileño-brasileña", "camboyano-camboyana", "canadiense-canadiense", "chileno-chilena", "chino-china", "colombiano-colombiana", "coreano-coreana", "costarricense-costarricense", "cubano-cubana", "danés-danesa", "ecuatoriano-ecuatoriana", "egipcio-egipcia", "salvadoreño-salvadoreña", "escocés-escocesa", "español-española", "estadounidense-estadounidense", "estonio-estonia", "etiope-etiope", "filipino-filipina", "finlandés-finlandesa", "francés-francesa", "galés-galesa", "griego-griega", "guatemalteco-guatemalteca", "haitiano-haitiana", "holandés-holandesa", "hondureño-hondureña", "indonés-indonesa", "inglés-inglesa", "iraquí-iraquí", "iraní-iraní", "irlandés-irlandesa", "israelí-israelí", "italiano-italiana", "japonés-japonesa", "jordano-jordana", "laosiano-laosiana", "letón-letona", "letonés-letonesa", "malayo-malaya", "marroquí-marroquí", "mexicano-mexicana", "nicaragüense-nicaragüense", "noruego-noruega", "neozelandés-neozelandesa", "panameño-panameña", "paraguayo-paraguaya", "peruano-peruana", "polaco-polaca", "portugués-portuguesa", "puertorriqueño-puertorriqueño", "dominicano-dominicana", "rumano-rumana", "ruso-rusa", "sueco-sueca", "suizo-suiza", "tailandés-tailandesa", "taiwanes-taiwanesa", "turco-turca", "ucraniano-ucraniana", "uruguayo-uruguaya", "venezolano-venezolana", "vietnamita-vietnamita"};
+
 Connection con;
     public ComboBox<String> combo_naciolidad;
 
     public void initialize() {
         //llenar combo-box
-        for (String nacionalidade : nacionalidades) {
-            combo_naciolidad.getItems().add(nacionalidade);
-        }
-    }
+       Util.llenar_combo(combo_naciolidad);
+     }
 
     public void Acceder() {
         if (txtnombre.getText().isBlank() || txtapellido.getText().isBlank() || txttelefono.getText().isBlank() || fecha_nacimiento.getValue() == null) {
@@ -50,6 +48,4 @@ Connection con;
 
         }
     }
-
-
 }

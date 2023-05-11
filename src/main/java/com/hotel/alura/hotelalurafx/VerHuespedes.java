@@ -34,6 +34,7 @@ public class VerHuespedes {
         Cerrar = cerrar;
     }
     public void initialize() {
+        tabla_cliente.getColumns().clear();
         con = new conexionBD().recuperaConexion();
         huespedesDAO hdao = new huespedesDAO(con);
         TableColumn<Huesped, String> nombreCol = new TableColumn<>("ID");
@@ -57,32 +58,35 @@ public class VerHuespedes {
         List<Huesped> lista = hdao.listar();
         ObservableList<Huesped> dato = FXCollections.observableArrayList();
         dato.addAll(lista);
+
         tabla_cliente.setItems(dato);
 
-        tabla_cliente.setOnMouseClicked(event -> {
-            if (event.getClickCount() == 1) {
-                Reporte a = new Reporte();
-                a.idSeleccionado(tabla_cliente.getSelectionModel().getSelectedItem().getId());
+        tabla_cliente.setOnMouseClicked(mouseEvent -> {
+            if (mouseEvent.getClickCount() == 1) {
+
+                Reporte.idSeleccionado(tabla_cliente.getSelectionModel().getSelectedItem().getId());
             }
-            if (event.getClickCount() == 2) {
+
+            if (mouseEvent.getClickCount() == 2) {
                 resultadolista = tabla_cliente.getSelectionModel().getSelectedItem();
                 Stage stage = (Stage) tabla_cliente.getScene().getWindow();
-
+                if (!Cerrar) {
                 try {
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Reporte.fxml"));
                     Parent root1 = fxmlLoader.load();
                     Stage stage1 = new Stage();
                     stage1.initModality(Modality.APPLICATION_MODAL);
-                    stage1.setTitle("Ver Huespedes");
+                    stage1.setTitle("Reportes");
                     stage1.setResizable(false);
                     stage1.setScene(new Scene(root1));
+                    stage1.setOnHidden(event -> initialize());
                     stage1.showAndWait();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
 
 
-                if (Cerrar) {
+                }else{
                     stage.close();
                 }
 
@@ -93,13 +97,10 @@ public class VerHuespedes {
             huespedesDAO hudao = new huespedesDAO(con);
             tabla_cliente.setItems(FXCollections.observableArrayList(hudao.resultadoBusqueda(criterioBusqueda)));
         });
-
     }
 
     public Huesped getHuespedSeleccionado() {
-
         return resultadolista;
-
     }
 
 

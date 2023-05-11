@@ -30,10 +30,6 @@ public class Huesped {
         return reservas;
     }
 
-    public void setReservas(List<Reserva> reservas) {
-        this.reservas = reservas;
-    }
-
     List<Reserva> reservas = new ArrayList<>();
 
     public Huesped(int id, String nombre, String apellido, Date fechaNacimiento, String nacionalidad, String telefono) {
@@ -57,7 +53,7 @@ public class Huesped {
         return id;
     }
     public Integer getIdinter() {
-        return (Integer) id;
+        return id;
     }
 
     public void setId(int id) {

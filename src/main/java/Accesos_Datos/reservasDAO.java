@@ -13,6 +13,8 @@ private final Connection con;
         this.con = con;
     }
 
+
+
     public void guardar(Reserva reserva) {
         try {
             PreparedStatement statement;
@@ -92,6 +94,58 @@ private final Connection con;
             throw new RuntimeException(e);
         }
         return resultado;
+    }
+
+    public Reserva busquedaid(int busqueda) {
+        Reserva resultado = new Reserva();
+        try {
+            final PreparedStatement statement = con
+                    .prepareStatement("SELECT * FROM hotel_alura.reservas WHERE id ="+busqueda);
+            statement.execute();
+            final ResultSet resultSet = statement.getResultSet();
+            while (resultSet.next()) {
+                resultado.setId(resultSet.getInt("id"));
+                resultado.setDia_entrada(resultSet.getDate("fecha_entrada"));
+                resultado.setDia_salida(resultSet.getDate("fecha_salida"));
+                resultado.setValor(resultSet.getDouble("valor"));
+                resultado.setForma_pago(resultSet.getString("forma_pago"));
+                resultado.setId_huesped(resultSet.getInt("id_huesped"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return resultado;
+    }
+
+    public void modificar(Reserva reserva) {
+        try {
+            final PreparedStatement statement = con.prepareStatement("UPDATE hotel_alura.reservas SET " + " fecha_entrada = ?, " + " fecha_salida = ?," + " valor = ?," + " forma_pago  = ?," + " id_huesped = ?" + " WHERE id = ?");
+
+            try (statement) {
+                statement.setDate(1, reserva.getDia_entrada());
+                statement.setDate(2, reserva.getDia_salida());
+                statement.setDouble(3, reserva.getValor());
+                statement.setString(4, reserva.getForma_pago());
+                statement.setInt(5, reserva.getId_huesped());
+                statement.setInt(6, reserva.getId());
+                statement.execute();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void eliminar(int id) {
+        try {
+            final PreparedStatement statement = con.prepareStatement("DELETE FROM hotel_alura.reservas WHERE id = ?");
+
+            try (statement) {
+                statement.setInt(1, id);
+                statement.execute();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }

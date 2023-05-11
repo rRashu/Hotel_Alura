@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="259.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.TratamientoFecha">
+    <DatePicker fx:id="fecheentrada" layoutX="186.0" layoutY="20.0" />
+    <DatePicker fx:id="fechasalida" layoutX="186.0" layoutY="65.0" />
+    <ComboBox fx:id="formapago" layoutX="186.0" layoutY="119.0" prefHeight="22.0" prefWidth="170.0" />
+    <Label fx:id="valor" layoutX="186.0" layoutY="169.0" prefHeight="18.0" prefWidth="170.0" />
+    <Button fx:id="guardar" layoutX="82.0" layoutY="187.0" mnemonicParsing="false" text="Guardar" />
+    <Button fx:id="eliminar" layoutX="230.0" layoutY="186.0" mnemonicParsing="false" text="Eliminar" />
+    <Label layoutX="37.0" layoutY="22.0" text="Fehca de Entrada" />
+    <Label layoutX="37.0" layoutY="78.0" text="Fecha de salida" />
+    <Label layoutX="37.0" layoutY="133.0" text="Forma de pago" />
+</AnchorPane>

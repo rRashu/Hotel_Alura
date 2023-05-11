@@ -11,7 +11,10 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="hotel_alura" />
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="hotel_alura" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>

@@ -22,7 +22,7 @@ create table reservas(
     primary key (id)
 );
 
-ALTER TABLE reservas ADD FOREIGN KEY (id_huesped) REFERENCES huespedes(id);
+ALTER TABLE reservas ADD FOREIGN KEY (id_huesped) REFERENCES huespedes(id) ON DELETE CASCADE;
 
 INSERT INTO `hotel_alura`.`huespedes`(`nombre`, `apellido`, `fecha_nacimiento`, `nacionalidad`, `telefono`)
     values ('Charlotte', 'Johnson', '2000-03-26', 'mexicano-mexicana', '(250)176-7767x99537'),
