@@ -1,21 +1,7 @@
-<style>
-hr {
-  border: none;
-  border-top: 4px solid #b87333; /* Color cobre */
-  margin: 1em 0;
-}
-.section-title {
-    position: relative;
-    color: #555D64;
-    max-width: 883px;
-    margin: 2em auto;
-    font-family: "Roboto Mono","Courier New",monospace;
-    font-size: 28px;    
-    line-height: 1;
-    text-align: center;
-    font-weight: normal
-}
-</style>
+<head>
+  <link rel="stylesheet" type="text/css" href="nombre-archivo-css.css">
+</head>
+
 <h3 class="section-title --top-decoration"><strong>Challenge ONE Back End Java<br> Sprint 01:</strong><br>Crea tu propia
 aplicación Desktop con conexión a la Base de Datos.</h3>
 <hr>

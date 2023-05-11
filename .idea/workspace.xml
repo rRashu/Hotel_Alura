@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="Creando el readme Guapo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nombre-archivo-css.css" beforeDir="false" afterPath="$PROJECT_DIR$/nombre-archivo-css.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -92,7 +96,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/robin/IdeaProjects/Hotel_Alura/src/main/java/com/hotel/alura/hotelalurafx&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/robin/IdeaProjects/Hotel_Alura/src/main/resources/com/hotel/alura/hotelalurafx&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/robin/IdeaProjects/Hotel_Alura&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -129,6 +133,9 @@
       <recent name="com.hotel.alura.hotelalurafx" />
       <recent name="sample" />
       <recent name="Accesos_Datos" />
+    </key>
+    <key name="ImportExportFile.TargetDir.RECENT_KEYS">
+      <recent name="C:\Users\robin\OneDrive\Escritorio" />
     </key>
   </component>
   <component name="RunManager">
@@ -222,7 +229,7 @@
       <workItem from="1683742353542" duration="19887000" />
       <workItem from="1683770445518" duration="29828000" />
       <workItem from="1683819886119" duration="6317000" />
-      <workItem from="1683843463181" duration="4551000" />
+      <workItem from="1683843463181" duration="5447000" />
     </task>
     <task id="LOCAL-00001" summary="agregado Añadir huesped y visualizar - sin diseño">
       <created>1682870203413</created>
@@ -336,7 +343,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683847441657</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Creando el readme Guapo">
+      <created>1683848269020</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683848269020</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Creando el readme Guapo">
+      <created>1683848723485</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683848723485</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
