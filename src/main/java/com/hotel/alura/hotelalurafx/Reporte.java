@@ -102,8 +102,8 @@ public class Reporte {
             ButtonType noButton = new ButtonType("No", ButtonBar.ButtonData.NO);
             Alert alert = new Alert(Alert.AlertType.INFORMATION, """
                     ¿Desea continuar?
-                                Las Reservas Que pertenezcan a este Huesped
-                                 Tambien Seran Eliminadas""", yesButton, noButton);
+                          Las Reservas Que pertenezcan a este\s
+                          Huesped Tambien Seran Eliminadas""", yesButton, noButton);
 
             alert.setTitle("Eliminar Huesped");
             DialogPane dialogPane = alert.getDialogPane();

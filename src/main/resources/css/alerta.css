@@ -18,18 +18,26 @@
 
 
 .dialog-pane > .button-bar > .container {
-    -fx-background-color:black;
+    -fx-background-color: #537188;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 14px;
+
 }
 
 .dialog-pane > .content.label {
     -fx-padding: 0.5em 0.5em 0.5em 0.5em;
-    -fx-background-color: yellow;
-    -fx-text-fill:black;
+    -fx-background-color:  #537188;
+    -fx-text-fill: #CBB279;
+    -fx-font-weight: bold;
     -fx-font-size:15px;
 }
 
 /**Costumization of DialogPane Header**/
 .dialog-pane :hover .header-panel {
-    -fx-background-color: black;
+
+    -fx-background-color: #ee0404;
 }
 
+.alert .header {
+    -fx-background-color: red;
+}

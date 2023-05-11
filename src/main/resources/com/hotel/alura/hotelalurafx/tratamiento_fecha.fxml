@@ -8,9 +8,12 @@
     <DatePicker fx:id="fecheentrada" layoutX="211.0" layoutY="26.0" />
     <DatePicker fx:id="fechasalida" layoutX="211.0" layoutY="78.0" />
     <ComboBox fx:id="formapago" layoutX="210.0" layoutY="133.0" prefHeight="22.0" prefWidth="275.0" stylesheets="@../../../../css/combo.css" />
-    <Label fx:id="valor" layoutX="186.0" layoutY="169.0" prefHeight="18.0" prefWidth="170.0" />
-    <Button fx:id="guardar" layoutX="154.0" layoutY="210.0" mnemonicParsing="false" text="Guardar" />
-    <Button fx:id="eliminar" layoutX="292.0" layoutY="210.0" mnemonicParsing="false" text="Eliminar" />
+    <Label fx:id="valor" layoutX="396.0" layoutY="203.0" prefHeight="35.0" prefWidth="118.0" style="-fx-text-fill: #CBB279;" text="prueba">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font></Label>
+    <Button fx:id="guardar" layoutX="125.0" layoutY="198.0" mnemonicParsing="false" stylesheets="@../../../../css/botton.css" text="Guardar" />
+    <Button fx:id="eliminar" layoutX="271.0" layoutY="198.0" mnemonicParsing="false" stylesheets="@../../../../css/botton.css" text="Eliminar" />
     <Label layoutX="14.0" layoutY="44.0" stylesheets="@../../../../css/txtLogin.css" text="Fehca de Entrada">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />

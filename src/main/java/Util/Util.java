@@ -15,23 +15,14 @@ import java.sql.Date;
 import java.text.SimpleDateFormat;
 
 public class Util {
-    static String[] nacionalidades = {"afgano-afgana", "alemán-alemana", "árabe-árabe", "argentino-argentina",
-            "australiano-australiana", "belga-belga", "boliviano-boliviana", "brasileño-brasileña",
-            "camboyano-camboyana", "canadiense-canadiense", "chileno-chilena", "chino-china",
-            "colombiano-colombiana", "coreano-coreana", "costarricense-costarricense", "cubano-cubana",
-            "danés-danesa", "ecuatoriano-ecuatoriana", "egipcio-egipcia", "salvadoreño-salvadoreña",
-            "escocés-escocesa", "español-española", "estadounidense-estadounidense", "estonio-estonia",
-            "etiope-etiope", "filipino-filipina", "finlandés-finlandesa", "francés-francesa", "galés-galesa",
-            "griego-griega", "guatemalteco-guatemalteca", "haitiano-haitiana", "holandés-holandesa",
-            "hondureño-hondureña", "indonés-indonesa", "inglés-inglesa", "iraquí-iraquí", "iraní-iraní",
-            "irlandés-irlandesa", "israelí-israelí", "italiano-italiana", "japonés-japonesa", "jordano-jordana",
-            "laosiano-laosiana", "letón-letona", "letonés-letonesa", "malayo-malaya", "marroquí-marroquí",
-            "mexicano-mexicana", "nicaragüense-nicaragüense", "noruego-noruega", "neozelandés-neozelandesa",
-            "panameño-panameña", "paraguayo-paraguaya", "peruano-peruana", "polaco-polaca", "portugués-portuguesa",
-            "puertorriqueño-puertorriqueño", "dominicano-dominicana", "rumano-rumana", "ruso-rusa", "sueco-sueca",
-            "suizo-suiza", "tailandés-tailandesa", "taiwanes-taiwanesa", "turco-turca", "ucraniano-ucraniana",
-            "uruguayo-uruguaya", "venezolano-venezolana", "vietnamita-vietnamita"};
+    static String[] formaPago = {"Efectivo","Tarjeta de Crédito","Transferencia Bancaria"};
+    static String[] nacionalidades = {"admin    "};
 
+    public static void llenar_formapago(ComboBox<String> comboBox){
+    for (String forma_Pago : formaPago) {
+        comboBox.getItems().add(forma_Pago);
+    }
+}
     public static void llenar_combo(ComboBox<String> comboBox) {
         for (String nacionalidade : nacionalidades) {
             comboBox.getItems().add(nacionalidade);

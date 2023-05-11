@@ -11,7 +11,6 @@
     -fx-text-fill: rgb(72, 74, 64);
 }
 
-
 .text-field:focused {
     -fx-background: none;
     -fx-outline: none;

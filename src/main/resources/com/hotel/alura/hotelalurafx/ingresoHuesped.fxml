@@ -53,6 +53,6 @@
          <Blend />
       </effect>
    </Label>
-   <Button id="button" fx:id="guardarHuesped" defaultButton="true" layoutX="215.0" layoutY="411.0" mnemonicParsing="false" onAction="#Acceder" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: white;" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Guardar" textAlignment="CENTER" />
+   <Button id="button" fx:id="guardarHuesped" defaultButton="true" layoutX="215.0" layoutY="411.0" mnemonicParsing="false" onAction="#Acceder" prefHeight="30.0" prefWidth="148.0" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Guardar" textAlignment="CENTER" />
 
 </AnchorPane>

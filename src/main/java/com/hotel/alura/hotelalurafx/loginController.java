@@ -18,6 +18,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
 
@@ -62,14 +63,9 @@ public class loginController {
         mover.setOnMousePressed(event -> {
             yOffset[0] = event.getSceneY();
             xOffset[0] = event.getSceneX();
-            System.out.println(xOffset[0] + " " + yOffset[0]);
         });
         mover.setOnMouseDragged(event -> {
-
-            System.out.println(event.getScreenX() - xOffset[0]);
-            System.out.println(event.getScreenX() - yOffset[0]);
             mover.getScene().getWindow().setX(event.getScreenX() - xOffset[0]);
-            System.out.println(event.getScreenX() - xOffset[0]);
             mover.getScene().getWindow().setY(event.getScreenY() - yOffset[0]);
 
         });
@@ -138,6 +134,7 @@ public class loginController {
             Parent root1 = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Menu Principal");
+            stage.initStyle(StageStyle.UNDECORATED);
             stage.setResizable(false);
             stage.setScene(new Scene(root1));
             stage.show();

@@ -12,9 +12,9 @@
       <DatePicker fx:id="fecha_nacimiento" layoutX="271.0" layoutY="23.0" prefHeight="26.0" prefWidth="198.0" stylesheets="@../../../../css/DateP.css" />
       <TextField fx:id="fechanacimiento" layoutX="271.0" layoutY="23.0" prefHeight="26.0" prefWidth="153.0" promptText="Nombre" stylesheets="@../../../../css/txtLogin.css" />
       <TextField fx:id="nacionalidadtxt" layoutX="271.0" layoutY="74.0" prefHeight="26.0" prefWidth="153.0" promptText="Nombre" style="-fx-background-color: transparent;" stylesheets="@../../../../css/txtLogin.css" />
-      <Button fx:id="guardar" defaultButton="true" layoutX="51.0" layoutY="160.0" mnemonicParsing="false" text="Guardar" />
+      <Button fx:id="guardar" defaultButton="true" layoutX="56.0" layoutY="139.0" mnemonicParsing="false" stylesheets="@../../../../css/botton.css" text="Guardar" />
    </Pane>
    <TableView fx:id="tabla_cliente" editable="true" layoutY="214.0" prefHeight="184.0" prefWidth="600.0" stylesheets="@../../../../css/tabla.css" />
-   <Button fx:id="modificar" layoutX="522.0" layoutY="29.0" mnemonicParsing="false" text="Editar" />
-   <Button fx:id="eliminar" layoutX="522.0" layoutY="99.0" mnemonicParsing="false" text="Eliminar" />
+   <Button fx:id="modificar" layoutX="502.0" layoutY="27.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="94.0" stylesheets="@../../../../css/botton.css" text="Editar" />
+   <Button fx:id="eliminar" layoutX="502.0" layoutY="103.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="94.0" stylesheets="@../../../../css/botton.css" text="Eliminar" />
 </AnchorPane>

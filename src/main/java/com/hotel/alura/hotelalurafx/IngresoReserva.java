@@ -26,7 +26,7 @@ public class IngresoReserva {
     public Label llblHuesped;
     public Button guardar;
     public Label valor;
-    String[] formaPago = {"efectivo","tarjeta de crédito","transferencia bancaria"};
+
     Huesped seleccionado;
     Connection con;
     private double dias= 8.55;
@@ -73,9 +73,7 @@ public class IngresoReserva {
     }
 
     public void initialize() {
-        for (String forma_Pago : formaPago) {
-            pago.getItems().add(forma_Pago);
-        }
+        Util.llenar_formapago(pago);
         entrada.setDayCellFactory(picker -> new DateCell() {
             @Override
             public void updateItem(LocalDate date, boolean empty) {

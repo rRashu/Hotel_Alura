@@ -25,44 +25,47 @@
          </ImageView>
          <Label fx:id="Ingreso" prefHeight="50.0" prefWidth="178.0" text="    Ingresar" textFill="#757482">
             <font>
-               <Font name="Arial" size="12.0" />
+               <Font name="Comic Sans MS Bold" size="18.0" />
             </font>
          </Label>
       </HBox>
       <HBox layoutY="297.0" prefHeight="33.0" prefWidth="168.0" styleClass="sidebar-btn">
-         <children>
-            <ImageView fitHeight="28.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-               <image>
-                  <Image url="@../../../../Imagenes/mas.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="reporte" prefHeight="50.0" prefWidth="178.0" text="    Reporte" textFill="#757482">
-               <font>
-                  <Font name="Arial" size="12.0" />
-               </font>
-            </Label>
-         </children>
+         <ImageView fitHeight="28.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true"
+                    styleClass="sidebar-btn-icon">
+            <HBox.margin>
+               <Insets left="10.0"/>
+            </HBox.margin>
+            <Image url="@../../../../Imagenes/mas.png"/>
+         </ImageView>
+         <Label fx:id="reporte" prefHeight="50.0" prefWidth="178.0" text="    Reporte" textFill="#757482">
+            <font>
+               <Font name="Comic Sans MS Bold" size="18.0"/>
+            </font>
+         </Label>
       </HBox>
       <HBox layoutY="337.0" prefHeight="33.0" prefWidth="168.0" styleClass="sidebar-btn">
-         <children>
-            <ImageView fitHeight="28.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar-btn-icon">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-               <image>
-                  <Image url="@../../../../Imagenes/mas.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="Ingreso2" prefHeight="50.0" prefWidth="178.0" text="    Aun no se que poner aqui" textFill="#757482">
-               <font>
-                  <Font name="Arial" size="12.0" />
-               </font>
-            </Label>
-         </children>
+         <ImageView fitHeight="28.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true"
+                    styleClass="sidebar-btn-icon">
+            <HBox.margin>
+               <Insets left="10.0"/>
+            </HBox.margin>
+            <Image url="@../../../../Imagenes/mas.png"/>
+         </ImageView>
+         <Label fx:id="Ingreso2" prefHeight="50.0" prefWidth="178.0" text="    Cerrar" textFill="#757482">
+            <font>
+               <Font name="Comic Sans MS Bold" size="18.0"/>
+            </font>
+         </Label>
       </HBox>
+      <ImageView fx:id="github" fitHeight="48.0" fitWidth="53.0" layoutX="22.0" layoutY="382.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@../../../../Imagenes/github.png"/>
+      </ImageView>
+      <ImageView fx:id="l" fitHeight="48.0" fitWidth="48.0" layoutX="99.0" layoutY="382.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@../../../../Imagenes/linkedin.png"/>
+      </ImageView>
    </Pane>
    <AnchorPane fx:id="otras" layoutX="168.0" layoutY="-1.0" prefHeight="454.0" prefWidth="627.0" style="-fx-background-color: #4444;" />
+   <Label fx:id="mover" prefHeight="95.0" prefWidth="615.0" text="Label" />
 </AnchorPane>

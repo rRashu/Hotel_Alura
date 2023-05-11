@@ -30,7 +30,7 @@
       <PasswordField fx:id="txtpass" layoutX="37.0" layoutY="152.0" prefHeight="33.0" prefWidth="180.0" stylesheets="@../../../../css/otrologin.css" />
       <Line fx:id="myline" endX="-90.00003051757812" endY="-113.99998474121094" layoutX="120.0" layoutY="228.0" startX="-90.00003051757812" startY="-113.99998474121094" stroke="#b1d700" strokeLineCap="ROUND" visible="false" />
       <Line fx:id="myline1" endX="-90.00003051757812" endY="-113.99998474121094" layoutX="120.0" layoutY="303.0" startX="-90.00003051757812" startY="-113.99998474121094" stroke="#b1d700" strokeLineCap="ROUND" visible="false" />
-      <Button id="button" fx:id="button" defaultButton="true" layoutX="51.0" layoutY="234.0" mnemonicParsing="false" onAction="#Acceder" prefHeight="30.0" prefWidth="148.0" styleClass="boton" stylesheets="@../../../../css/otrologin.css" text="Button" textAlignment="CENTER" />
+      <Button id="button" fx:id="button" defaultButton="true" layoutX="51.0" layoutY="234.0" mnemonicParsing="false" onAction="#Acceder" prefHeight="30.0" prefWidth="148.0" styleClass="boton" stylesheets="@../../../../css/otrologin.css" text="Ingresar" textAlignment="CENTER" />
       <Label layoutX="73.0" layoutY="14.0" prefHeight="20.0" prefWidth="122.0" text="Login">
          <font>
             <Font name="Arial Bold" size="19.0" />

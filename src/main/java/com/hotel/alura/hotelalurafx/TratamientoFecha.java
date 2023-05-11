@@ -32,7 +32,7 @@ public class TratamientoFecha {
     long dias;
 
     public void initialize() {
-
+Util.llenar_formapago(formapago);
         con = new conexionBD().recuperaConexion();
         reservasDAO rdao = new reservasDAO(con);
         busquedaid = rdao.busquedaid(idseleccionado);

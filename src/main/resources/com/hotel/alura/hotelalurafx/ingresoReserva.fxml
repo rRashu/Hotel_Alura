@@ -73,8 +73,8 @@
          <Insets top="10.0" />
       </padding>
    </Label>
-   <Button layoutX="514.0" layoutY="93.0" mnemonicParsing="false" onAction="#click" onMouseClicked="#click" text="Seleccionar" AnchorPane.topAnchor="93.0" />
-   <Button fx:id="guardar" defaultButton="true" layoutX="36.0" layoutY="381.0" mnemonicParsing="false" onAction="#guardarenBD" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: white;" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Guardar" textAlignment="CENTER" />
+   <Button layoutX="500.0" layoutY="82.0" mnemonicParsing="false" onAction="#click" onMouseClicked="#click" styleClass="boton" stylesheets="@../../../../css/botton.css" text="Seleccionar" AnchorPane.topAnchor="82.0" />
+   <Button fx:id="guardar" defaultButton="true" layoutX="36.0" layoutY="381.0" mnemonicParsing="false" onAction="#guardarenBD" prefHeight="30.0" prefWidth="148.0" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Guardar" textAlignment="CENTER" />
    <Label fx:id="llblHuesped" layoutX="258.0" layoutY="105.0" prefHeight="26.0" prefWidth="216.0" style="-fx-text-fill: #CBB279;" text="Huesped no seleccionado" textFill="#1d2123" AnchorPane.topAnchor="92.0">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
