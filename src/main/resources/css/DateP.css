@@ -1,5 +1,5 @@
 .date-picker {
-    default-color: #009688;
+    default-color: #CBB279;
 }
 
 .date-picker,
@@ -27,7 +27,7 @@
 }
 
 .text-field{
-    -fx-text-fill: bisque;
+    -fx-text-fill: #CBB279;
     -fx-background-color: TRANSPARENT;
     -fx-border-color: transparent transparent gray transparent;
     -fx-border-width: 0 0 2 0;
@@ -36,7 +36,7 @@
 }
 
 .combo-box{
-    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    
     -fx-background-insets: 0 0 -1 0, 0, 1, 2;
     -fx-background-radius: 3px, 3px, 2px, 1px;
 

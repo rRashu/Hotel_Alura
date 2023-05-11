@@ -4,32 +4,34 @@
         -fx-height: 40px;
         -fx-border: none;
         -fx-background: none;
-        -fx-outline: none;  
-        -fx-font-family: Times New Roman, serif;
-        -fx-font-size: 15px; 
+        -fx-outline: none;
         -fx-font-weight: bold; 
-        -fx-text-fill: rgb(72, 74, 64);
+        -fx-text-fill: #E1D4BB;
+        -fx-background-color: TRANSPARENT;
+        -fx-border-color: transparent transparent gray transparent;
+        -fx-border-width: 0 0 2 0;
+        -fx-font-family: "Comic Sans MS";
+        -fx-font-size: 18px;
 }
 
 
 .text-field:focused {
         -fx-background: none;
-	-fx-outline: none;
-	-fx-background-color: rgba(179, 122, 122, 0.5);
-        -fx-text-fill: rgb(186, 233, 16);
+        -fx-outline: none;
+        -fx-background-color: rgb(133, 36, 36,0);
+        -fx-text-fill: #CBB279;
 }
 
 .panel{
         -fx-background-radius: 40;
         -fx-opacity: 0.9;
-       -fx-background-color: rgb(179, 122, 122);
+       -fx-background-color: rgb(56, 7, 7);
 }
  
 .boton{
         -fx-display:block;
         -fx-height: 300px;        
         -fx-background-radius: 50;
-        
       }
 
 

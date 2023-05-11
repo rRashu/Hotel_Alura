@@ -152,25 +152,28 @@ public class Reporte {
 
         tabla_cliente.setOnMouseClicked(mouseEvent -> {
             if (mouseEvent.getClickCount() == 1) {
-                TratamientoFecha a = new TratamientoFecha();
-                a.idSeleccionado(tabla_cliente.getSelectionModel().getSelectedItem().getId());
+                if (tabla_cliente.getSelectionModel().getSelectedItem() != null) {
+                    TratamientoFecha a = new TratamientoFecha();
+                    a.idSeleccionado(tabla_cliente.getSelectionModel().getSelectedItem().getId());
+                }
             }
             if (mouseEvent.getClickCount() == 2) {
-                resultadolista = tabla_cliente.getSelectionModel().getSelectedItem();
-
-
-                try {
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("tratamiento_fecha.fxml"));
-                    Parent root1 = fxmlLoader.load();
-                    Stage stage1 = new Stage();
-                    stage1.initModality(Modality.APPLICATION_MODAL);
-                    stage1.setTitle("Fechas");
-                    stage1.setResizable(false);
-                    stage1.setScene(new Scene(root1));
-                    stage1.setOnHidden(event -> initialize());
-                    stage1.showAndWait();
-                } catch (Exception e) {
-                    e.printStackTrace();
+                Object selectedItem = tabla_cliente.getSelectionModel().getSelectedItem();
+                if (selectedItem != null) {
+                    resultadolista = tabla_cliente.getSelectionModel().getSelectedItem();
+                    try {
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("tratamiento_fecha.fxml"));
+                        Parent root1 = fxmlLoader.load();
+                        Stage stage1 = new Stage();
+                        stage1.initModality(Modality.APPLICATION_MODAL);
+                        stage1.setTitle("Fechas");
+                        stage1.setResizable(false);
+                        stage1.setScene(new Scene(root1));
+                        stage1.setOnHidden(event -> initialize());
+                        stage1.showAndWait();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });
@@ -179,4 +182,5 @@ public class Reporte {
     public static void idSeleccionado(int idHuesped) {
         idseleccionado = idHuesped;
     }
+
 }

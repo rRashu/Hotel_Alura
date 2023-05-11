@@ -1,41 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane style="-fx-background-color: rgb(179, 122, 122);" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.hotel.alura.hotelalurafx.IngresoReserva">
+<AnchorPane prefHeight="454.0" prefWidth="627.0" style="-fx-background-color: #537188;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.IngresoReserva">
 
-   <Label layoutX="9.0" prefHeight="68.0" prefWidth="315.0" text="Registrar Reservas " textAlignment="CENTER" textOverrun="CLIP">
+   <Label layoutX="50.0" layoutY="14.0" prefHeight="68.0" prefWidth="315.0" text="Registrar Reservas " textAlignment="CENTER" textOverrun="CLIP">
       <font>
          <Font name="Comic Sans MS" size="26.0" />
       </font>
    </Label>
-   <DatePicker fx:id="salida" editable="false" layoutX="221.0" layoutY="204.0" prefHeight="35.0" prefWidth="301.0" promptText="Seleccione" stylesheets="@../../../../css/DateP.css" />
-   <ComboBox fx:id="pago" layoutX="215.0" layoutY="286.0" prefHeight="36.0" prefWidth="296.0" promptText="Seleccione" stylesheets="@../../../../css/combo.css" />
-   <Label layoutX="43.0" layoutY="149.0" text="Dia de Entrada" textFill="#1d2123">
+   <DatePicker fx:id="salida" editable="false" layoutX="255.0" layoutY="204.0" prefHeight="35.0" prefWidth="301.0" promptText="Seleccione" stylesheets="@../../../../css/DateP.css" AnchorPane.topAnchor="212.0" />
+   <ComboBox fx:id="pago" layoutX="258.0" layoutY="286.0" prefHeight="36.0" prefWidth="296.0" promptText="Seleccione" stylesheets="@../../../../css/combo.css" AnchorPane.topAnchor="272.0" />
+   <Label layoutX="42.0" layoutY="149.0" text="Dia de Entrada" textFill="#1d2123" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="152.0">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
       <effect>
          <Glow />
-      </effect></Label>
-   <Label layoutX="37.0" layoutY="209.0" text="Dia de Salida" textFill="#1d2123">
+      </effect>
+      <padding>
+         <Insets top="10.0" />
+      </padding></Label>
+   <Label layoutX="42.0" layoutY="215.0" text="Dia de Salida" textFill="#1d2123" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="212.0">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
       <effect>
          <Glow />
-      </effect></Label>
-   <Label contentDisplay="RIGHT" ellipsisString="" layoutX="32.0" layoutY="291.0" text="Forma de Pago" textFill="#1d2123" textOverrun="LEADING_ELLIPSIS">
+      </effect>
+      <padding>
+         <Insets top="10.0" />
+      </padding></Label>
+   <Label contentDisplay="RIGHT" ellipsisString="" layoutX="37.0" layoutY="309.0" text="Forma de Pago" textFill="#1d2123" textOverrun="LEADING_ELLIPSIS" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="272.0">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
       <effect>
          <Glow />
-      </effect></Label>
-   <Label contentDisplay="RIGHT" ellipsisString="" layoutX="233.0" layoutY="430.0" text="Valor A Cancelar:" textFill="#1d2123" textOverrun="CLIP">
+      </effect>
+      <padding>
+         <Insets top="10.0" />
+      </padding></Label>
+   <Label contentDisplay="RIGHT" ellipsisString="" layoutX="255.0" layoutY="368.0" text="Valor A Cancelar:" textFill="#1d2123" textOverrun="CLIP">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
@@ -43,8 +53,8 @@
          <Blend />
       </effect>
    </Label>
-   <DatePicker fx:id="entrada" editable="false" layoutX="221.0" layoutY="144.0" prefHeight="35.0" prefWidth="301.0" promptText="Seleccione" stylesheets="@../../../../css/DateP.css" />
-   <Label fx:id="valor" contentDisplay="RIGHT" ellipsisString="" layoutX="414.0" layoutY="430.0" text="\$8.55" textFill="#1d2123" textOverrun="CLIP">
+   <DatePicker fx:id="entrada" editable="false" layoutX="255.0" layoutY="144.0" prefHeight="35.0" prefWidth="301.0" promptText="Seleccione" stylesheets="@../../../../css/DateP.css" AnchorPane.topAnchor="152.0" />
+   <Label fx:id="valor" contentDisplay="RIGHT" ellipsisString="" layoutX="420.0" layoutY="368.0" text="\$8.55" textFill="#1d2123" textOverrun="CLIP">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
@@ -52,17 +62,20 @@
          <Blend />
       </effect>
    </Label>
-   <Label layoutX="59.0" layoutY="82.0" text="Huesped" textFill="#1d2123">
+   <Label layoutX="42.0" layoutY="92.0" text="Huesped" textFill="#1d2123" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="92.0">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
       <effect>
          <Glow />
       </effect>
+      <padding>
+         <Insets top="10.0" />
+      </padding>
    </Label>
-   <Button layoutX="441.0" layoutY="83.0" mnemonicParsing="false" onAction="#click" onMouseClicked="#click" text="Seleccionar" />
-   <Button fx:id="guardar" defaultButton="true" layoutX="32.0" layoutY="415.0" mnemonicParsing="false" onAction="#guardarenBD" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: white;" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Button" textAlignment="CENTER" />
-   <Label fx:id="llblHuesped" layoutX="203.0" layoutY="81.0" prefHeight="26.0" prefWidth="216.0" text="Huesped no seleccionado" textFill="#1d2123">
+   <Button layoutX="514.0" layoutY="93.0" mnemonicParsing="false" onAction="#click" onMouseClicked="#click" text="Seleccionar" AnchorPane.topAnchor="93.0" />
+   <Button fx:id="guardar" defaultButton="true" layoutX="36.0" layoutY="381.0" mnemonicParsing="false" onAction="#guardarenBD" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: white;" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Guardar" textAlignment="CENTER" />
+   <Label fx:id="llblHuesped" layoutX="258.0" layoutY="105.0" prefHeight="26.0" prefWidth="216.0" style="-fx-text-fill: #CBB279;" text="Huesped no seleccionado" textFill="#1d2123" AnchorPane.topAnchor="92.0">
       <font>
          <Font name="Comic Sans MS Bold" size="18.0" />
       </font>

@@ -29,7 +29,6 @@ public class VerHuespedes {
     private static Huesped resultadolista = null;
     static boolean Cerrar = false;
 
-
     public void cerrar(boolean cerrar){
         Cerrar = cerrar;
     }
@@ -60,34 +59,36 @@ public class VerHuespedes {
         dato.addAll(lista);
 
         tabla_cliente.setItems(dato);
-
+        tabla_cliente.setColumnResizePolicy(TableView.UNCONSTRAINED_RESIZE_POLICY);
         tabla_cliente.setOnMouseClicked(mouseEvent -> {
             if (mouseEvent.getClickCount() == 1) {
-
-                Reporte.idSeleccionado(tabla_cliente.getSelectionModel().getSelectedItem().getId());
+                if (tabla_cliente.getSelectionModel().getSelectedItem() != null) {
+                    Reporte.idSeleccionado(tabla_cliente.getSelectionModel().getSelectedItem().getId());
+                }
             }
 
             if (mouseEvent.getClickCount() == 2) {
-                resultadolista = tabla_cliente.getSelectionModel().getSelectedItem();
-                Stage stage = (Stage) tabla_cliente.getScene().getWindow();
-                if (!Cerrar) {
-                try {
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Reporte.fxml"));
-                    Parent root1 = fxmlLoader.load();
-                    Stage stage1 = new Stage();
-                    stage1.initModality(Modality.APPLICATION_MODAL);
-                    stage1.setTitle("Reportes");
-                    stage1.setResizable(false);
-                    stage1.setScene(new Scene(root1));
-                    stage1.setOnHidden(event -> initialize());
-                    stage1.showAndWait();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-
-                }else{
-                    stage.close();
+                Object selectedItem = tabla_cliente.getSelectionModel().getSelectedItem();
+                if (selectedItem != null) {
+                    resultadolista = tabla_cliente.getSelectionModel().getSelectedItem();
+                    Stage stage = (Stage) tabla_cliente.getScene().getWindow();
+                    if (!Cerrar) {
+                        try {
+                            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Reporte.fxml"));
+                            Parent root1 = fxmlLoader.load();
+                            Stage stage1 = new Stage();
+                            stage1.initModality(Modality.APPLICATION_MODAL);
+                            stage1.setTitle("Reportes");
+                            stage1.setResizable(false);
+                            stage1.setScene(new Scene(root1));
+                            stage1.setOnHidden(event -> initialize());
+                            stage1.showAndWait();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    } else {
+                        stage.close();
+                    }
                 }
 
             }

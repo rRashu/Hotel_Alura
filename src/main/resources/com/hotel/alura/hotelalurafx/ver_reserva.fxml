@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="469.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.VerReserva">
-    <TableView fx:id="tabla_cliente" layoutY="85.0" prefHeight="383.0" prefWidth="558.0" />
-   <TextField fx:id="buscar" layoutX="413.0" layoutY="36.0" promptText="Busqueda" />
+<AnchorPane prefHeight="493.0" prefWidth="642.0" style="-fx-background-color: #537188;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.VerReserva">
+    <TableView fx:id="tabla_cliente" layoutY="85.0" prefHeight="406.0" prefWidth="642.0" />
+   <TextField fx:id="buscar" layoutX="412.0" layoutY="32.0" prefHeight="28.0" prefWidth="194.0" promptText="Busqueda" stylesheets="@../../../../css/txtLogin.css" />
+   <ImageView fitHeight="72.0" fitWidth="78.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../Imagenes/campana.png" />
+      </image>
+   </ImageView>
 </AnchorPane>

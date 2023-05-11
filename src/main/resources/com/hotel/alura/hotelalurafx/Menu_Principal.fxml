@@ -64,5 +64,5 @@
          </children>
       </HBox>
    </Pane>
-   <AnchorPane fx:id="otras" layoutX="168.0" layoutY="-1.0" prefHeight="454.0" prefWidth="525.0" style="-fx-background-color: #4444;" />
+   <AnchorPane fx:id="otras" layoutX="168.0" layoutY="-1.0" prefHeight="454.0" prefWidth="627.0" style="-fx-background-color: #4444;" />
 </AnchorPane>

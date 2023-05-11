@@ -4,25 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="Falta eliminar y modificar y mucho diseño">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/TratamientoFecha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/tratamiento_fecha.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/alerta.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="falta solo diseño">
+      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/otrologin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/tabla.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/text.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel alura.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hotel alura.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Accesos_Datos/huespedesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accesos_Datos/huespedesDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Accesos_Datos/reservasDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accesos_Datos/reservasDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Huesped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Huesped.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoHuesped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoHuesped.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/MenuPrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/Reporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/Reporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/TratamientoFecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/TratamientoFecha.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerHuespedes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerHuespedes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/VerReserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Menu_Principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Menu_Principal.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Reporte.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Reporte.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoHuesped.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoHuesped.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoReserva.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoReserva.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/tratamiento_fecha.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/tratamiento_fecha.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ver_huespedes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ver_huespedes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ver_reserva.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ver_reserva.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/DateP.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/DateP.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/combo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/txtLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/txtLogin.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
         <option value="CSS File" />
       </list>
     </option>
@@ -236,7 +241,7 @@
       <workItem from="1683663556269" duration="7441000" />
       <workItem from="1683690573193" duration="16208000" />
       <workItem from="1683742353542" duration="19887000" />
-      <workItem from="1683770445518" duration="13642000" />
+      <workItem from="1683770445518" duration="29725000" />
     </task>
     <task id="LOCAL-00001" summary="agregado Añadir huesped y visualizar - sin diseño">
       <created>1682870203413</created>
@@ -315,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683706722362</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="falta solo diseño">
+      <created>1683784890834</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683784890834</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +370,8 @@
     <MESSAGE value="ver Reserva" />
     <MESSAGE value="Menu Principal y visualizacion" />
     <MESSAGE value="Falta eliminar y modificar y mucho diseño" />
-    <option name="LAST_COMMIT_MESSAGE" value="Falta eliminar y modificar y mucho diseño" />
+    <MESSAGE value="falta solo diseño" />
+    <option name="LAST_COMMIT_MESSAGE" value="falta solo diseño" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

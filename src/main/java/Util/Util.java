@@ -7,10 +7,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.Window;
 import javafx.util.Duration;
-import javafx.util.converter.DoubleStringConverter;
 import org.controlsfx.control.Notifications;
 
 import java.sql.Date;
@@ -81,11 +79,16 @@ public class Util {
             });
             TableColumn<Reserva, Double> nombreCol3 = new TableColumn<>("Valor");
             nombreCol3.setCellValueFactory(new PropertyValueFactory<>("valor"));
-            nombreCol3.setCellFactory(TextFieldTableCell.forTableColumn(new DoubleStringConverter()));
             TableColumn<Reserva, String> nombreCol4 = new TableColumn<>("Forma De pago");
             nombreCol4.setCellValueFactory(new PropertyValueFactory<>("forma_pago"));
             TableColumn<Reserva, String> nombreCol5 = new TableColumn<>("Id Huesped");
             nombreCol5.setCellValueFactory(new PropertyValueFactory<>("id_huesped"));
+            nombreCol.setStyle("-fx-alignment: CENTER;");
+            nombreCol1.setStyle("-fx-alignment: CENTER;");
+            nombreCol2.setStyle("-fx-alignment: CENTER;");
+            nombreCol3.setStyle("-fx-alignment: CENTER;");
+            nombreCol5.setStyle("-fx-alignment: CENTER;");
+            tablaCliente.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
             tablaCliente.getColumns().addAll(nombreCol, nombreCol1, nombreCol2, nombreCol3, nombreCol4, nombreCol5);
         }
     }

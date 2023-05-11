@@ -9,11 +9,11 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane blendMode="MULTIPLY" cache="true" cacheHint="ROTATE" cacheShape="false" centerShape="false" depthTest="DISABLE" focusTraversable="true" pickOnBounds="false" prefHeight="404.0" prefWidth="678.0" scaleShape="false" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.hotel.alura.hotelalurafx.loginController">
+<AnchorPane blendMode="MULTIPLY" cache="true" cacheHint="ROTATE" cacheShape="false" centerShape="false" depthTest="DISABLE" focusTraversable="true" pickOnBounds="false" prefHeight="404.0" prefWidth="678.0" scaleShape="false" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.loginController">
    <ImageView fitHeight="404.0" fitWidth="692.0" pickOnBounds="true" smooth="false">
       <Image url="@../../../../Imagenes/fondo.jpg" />
    </ImageView>
-   <Pane fx:id="login" layoutX="78.0" layoutY="48.0" prefHeight="288.0" prefWidth="268.0" styleClass="panel" stylesheets="@../../../../css/txtLogin.css" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="346.0" AnchorPane.topAnchor="48.0">
+   <Pane fx:id="login" layoutX="78.0" layoutY="48.0" prefHeight="288.0" prefWidth="268.0" styleClass="panel" stylesheets="@../../../../css/otrologin.css" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="346.0" AnchorPane.topAnchor="48.0">
       <Label fx:id="lblusuario" layoutX="40.0" layoutY="76.0" prefHeight="20.0" prefWidth="122.0" text="Usuario">
          <font>
             <Font name="System Bold" size="19.0" />
@@ -24,13 +24,13 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="txtusuario" layoutX="37.0" layoutY="77.0" prefHeight="33.0" prefWidth="180.0" stylesheets="@../../../../css/txtLogin.css" />
+      <TextField fx:id="txtusuario" layoutX="37.0" layoutY="79.0" prefHeight="33.0" prefWidth="180.0" stylesheets="@../../../../css/otrologin.css" />
       <Line fx:id="lineaguia1" blendMode="SRC_ATOP" endX="100.0" endY="-113.99998474121094" layoutX="120.0" layoutY="303.0" startX="-90.00003051757812" startY="-113.99998474121094" strokeLineCap="ROUND" />
       <Line fx:id="lineaguia" blendMode="SRC_ATOP" endX="100.0" endY="-113.99998474121094" layoutX="120.0" layoutY="228.0" startX="-90.00003051757812" startY="-113.99998474121094" strokeLineCap="ROUND" />
-      <PasswordField fx:id="txtpass" layoutX="37.0" layoutY="152.0" prefHeight="33.0" prefWidth="180.0" stylesheets="@../../../../css/txtLogin.css" />
+      <PasswordField fx:id="txtpass" layoutX="37.0" layoutY="152.0" prefHeight="33.0" prefWidth="180.0" stylesheets="@../../../../css/otrologin.css" />
       <Line fx:id="myline" endX="-90.00003051757812" endY="-113.99998474121094" layoutX="120.0" layoutY="228.0" startX="-90.00003051757812" startY="-113.99998474121094" stroke="#b1d700" strokeLineCap="ROUND" visible="false" />
       <Line fx:id="myline1" endX="-90.00003051757812" endY="-113.99998474121094" layoutX="120.0" layoutY="303.0" startX="-90.00003051757812" startY="-113.99998474121094" stroke="#b1d700" strokeLineCap="ROUND" visible="false" />
-      <Button id="button" fx:id="button" defaultButton="true" layoutX="51.0" layoutY="234.0" mnemonicParsing="false" onAction="#Acceder" prefHeight="30.0" prefWidth="148.0" styleClass="boton" stylesheets="@../../../../css/txtLogin.css" text="Button" textAlignment="CENTER" />
+      <Button id="button" fx:id="button" defaultButton="true" layoutX="51.0" layoutY="234.0" mnemonicParsing="false" onAction="#Acceder" prefHeight="30.0" prefWidth="148.0" styleClass="boton" stylesheets="@../../../../css/otrologin.css" text="Button" textAlignment="CENTER" />
       <Label layoutX="73.0" layoutY="14.0" prefHeight="20.0" prefWidth="122.0" text="Login">
          <font>
             <Font name="Arial Bold" size="19.0" />

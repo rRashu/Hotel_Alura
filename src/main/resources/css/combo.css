@@ -1,5 +1,5 @@
 .combo-box {
-    -fx-text-fill: bisque;
+    -fx-text-fill: #CBB279;
     -fx-background-color: TRANSPARENT;
     -fx-border-color: transparent transparent gray transparent;
     -fx-border-width: 0 0 2 0;
@@ -16,11 +16,11 @@
     -fx-padding: 10;
 }
 .combo-box .list-cell {
-    -fx-text-fill: bisque;
+    -fx-text-fill: #CBB279;
 }
 
 
 .combo-box-popup .list-view .list-cell {
-    -fx-text-fill: #586920;
-    -fx-background-color: rgba(182, 210, 166, 0.84);
+    -fx-text-fill: #CBB279;
+    -fx-background-color: #537188;
 }

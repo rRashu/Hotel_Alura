@@ -2,15 +2,25 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="259.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.TratamientoFecha">
-    <DatePicker fx:id="fecheentrada" layoutX="186.0" layoutY="20.0" />
-    <DatePicker fx:id="fechasalida" layoutX="186.0" layoutY="65.0" />
-    <ComboBox fx:id="formapago" layoutX="186.0" layoutY="119.0" prefHeight="22.0" prefWidth="170.0" />
+<AnchorPane prefHeight="259.0" prefWidth="520.0" style="-fx-background-color: #537188;" stylesheets="@../../../../css/DateP.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.alura.hotelalurafx.TratamientoFecha">
+    <DatePicker fx:id="fecheentrada" layoutX="211.0" layoutY="26.0" />
+    <DatePicker fx:id="fechasalida" layoutX="211.0" layoutY="78.0" />
+    <ComboBox fx:id="formapago" layoutX="210.0" layoutY="133.0" prefHeight="22.0" prefWidth="275.0" stylesheets="@../../../../css/combo.css" />
     <Label fx:id="valor" layoutX="186.0" layoutY="169.0" prefHeight="18.0" prefWidth="170.0" />
-    <Button fx:id="guardar" layoutX="82.0" layoutY="187.0" mnemonicParsing="false" text="Guardar" />
-    <Button fx:id="eliminar" layoutX="230.0" layoutY="186.0" mnemonicParsing="false" text="Eliminar" />
-    <Label layoutX="37.0" layoutY="22.0" text="Fehca de Entrada" />
-    <Label layoutX="37.0" layoutY="78.0" text="Fecha de salida" />
-    <Label layoutX="37.0" layoutY="133.0" text="Forma de pago" />
+    <Button fx:id="guardar" layoutX="154.0" layoutY="210.0" mnemonicParsing="false" text="Guardar" />
+    <Button fx:id="eliminar" layoutX="292.0" layoutY="210.0" mnemonicParsing="false" text="Eliminar" />
+    <Label layoutX="14.0" layoutY="44.0" stylesheets="@../../../../css/txtLogin.css" text="Fehca de Entrada">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font></Label>
+    <Label layoutX="14.0" layoutY="100.0" stylesheets="@../../../../css/txtLogin.css" text="Fecha de salida">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font></Label>
+    <Label layoutX="14.0" layoutY="151.0" stylesheets="@../../../../css/txtLogin.css" text="Forma de pago">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font></Label>
 </AnchorPane>

@@ -14,6 +14,7 @@ import org.controlsfx.control.Notifications;
 
 import java.sql.Connection;
 import java.sql.Date;
+import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 
 public class TratamientoFecha {
@@ -28,6 +29,7 @@ public class TratamientoFecha {
     Reserva busquedaid;
     private Timeline timeline;
     private int countdown = 5;
+    long dias;
 
     public void initialize() {
 
@@ -41,19 +43,23 @@ public class TratamientoFecha {
 
         guardar.setOnAction(event -> {
             Stage stage = (Stage) fecheentrada.getScene().getWindow();
-                Reserva reservamodificado = new Reserva();
-                reservamodificado.setId(busquedaid.getId());
-                reservamodificado.setDia_entrada(Date.valueOf(fecheentrada.getValue()));
-                reservamodificado.setDia_salida(Date.valueOf(fechasalida.getValue()));
-                reservamodificado.setValor(Double.parseDouble(valor.getText()));
-                reservamodificado.setForma_pago(formapago.getValue());
-                reservamodificado.setId_huesped(busquedaid.getId_huesped());
-                reservasDAO rdao2 = new reservasDAO(con);
-                rdao2.modificar(reservamodificado);
-                initialize();
-                Notifications noti = Notifications.create();
-                Util.notificacionbien(noti);
-                stage.close();
+            Reserva reservamodificado = new Reserva();
+            reservamodificado.setId(busquedaid.getId());
+            reservamodificado.setDia_entrada(Date.valueOf(fecheentrada.getValue()));
+            reservamodificado.setDia_salida(Date.valueOf(fechasalida.getValue()));
+            reservamodificado.setValor(dias * 8.55);
+            reservamodificado.setForma_pago(formapago.getValue());
+            reservamodificado.setId_huesped(busquedaid.getId_huesped());
+            reservasDAO rdao2 = new reservasDAO(con);
+            rdao2.modificar(reservamodificado);
+            initialize();
+            Notifications noti = Notifications.create();
+            Util.notificacionbien(noti);
+            stage.close();
+        });
+        fechasalida.valueProperty().addListener((obs, oldVal, newVal) -> {
+            dias = ChronoUnit.DAYS.between(fecheentrada.getValue(), fechasalida.getValue());
+        valor.setText(String.valueOf(dias*8.55));
         });
         eliminar.setOnAction(event -> {
             Stage stage = (Stage) fecheentrada.getScene().getWindow();
