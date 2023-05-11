@@ -48,8 +48,8 @@ public class loginController {
 
     public void initialize() {
         button.setDefaultButton(true);
-        Init2(txtpass, myline1, lblpass);
-        Init2(txtusuario, myline, lblusuario);
+        Init2(txtusuario, myline, lblusuario, 65);
+        Init2(txtpass, myline1, lblpass,130);
         Application application = new Application() {
             @Override
             public void start(Stage stage) {
@@ -72,25 +72,25 @@ public class loginController {
 
     }
 
-    private void Init2(TextField txtpass, Line myline1, Label lblpass) {
+    private void Init2(TextField txtpass, Line myline1, Label lblpass,double pass) {
         txtpass.focusedProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue) {
                 if ("".equals(txtpass.getText())) {
                     myline1.setVisible(true);
                     soloLinea(duracionAnimacion, myline1);
-                    mouse(colorInicio, colorFin, 25, lblpass, myline1, inicio, fin);
+                    mouse(colorInicio, colorFin,pass ,10, lblpass, myline1, inicio, fin);
                 }
             } else {
                 if (txtpass.getText().equals("")) {
-                    mouse(colorFin, colorInicio, -25, lblpass, myline1, fin, inicio);
+                    mouse(colorFin, colorInicio,pass, -10, lblpass, myline1, fin, inicio);
                     des(duracionAnimacion, myline1);
                 }
             }
         });
     }
 
-    public void mouse(Color startColor, Color endColor, int px, Label lbl, Line myline, int inicio, int fin) {
-        double startY = lbl.getLayoutY();
+    public void mouse(Color startColor, Color endColor,double startY, int px, Label lbl, Line myline, int inicio, int fin) {
+
         double endY = startY - px;
         Timeline timeline = new Timeline(
                 new KeyFrame(Duration.ZERO, new KeyValue(lbl.textFillProperty(), startColor)),

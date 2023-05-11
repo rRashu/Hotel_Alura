@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="Avanzado el diseño">
+    <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="Finalizado Parcialmente">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d6f77a40-29c0-4da8-947c-a9cf178be385.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d6f77a40-29c0-4da8-947c-a9cf178be385.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/IngresoReserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/MenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/Reporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/Reporte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/TratamientoFecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/TratamientoFecha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/alura/hotelalurafx/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Menu_Principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Menu_Principal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Reporte.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/Reporte.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoHuesped.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoHuesped.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoReserva.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/ingresoReserva.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/tratamiento_fecha.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hotel/alura/hotelalurafx/tratamiento_fecha.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/alerta.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/alerta.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/otrologin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/otrologin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/text.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/botton.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +103,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15722656&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.11507481&quot;,
@@ -136,11 +124,11 @@
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\com\hotel\alura\Style" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\Imagenes" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\css" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\com\hotel\alura\hotelalurafx" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\java\javafx" />
-      <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hotel.alura.hotelalurafx" />
@@ -238,7 +226,8 @@
       <workItem from="1683690573193" duration="16208000" />
       <workItem from="1683742353542" duration="19887000" />
       <workItem from="1683770445518" duration="29828000" />
-      <workItem from="1683819886119" duration="5114000" />
+      <workItem from="1683819886119" duration="6317000" />
+      <workItem from="1683843463181" duration="3884000" />
     </task>
     <task id="LOCAL-00001" summary="agregado Añadir huesped y visualizar - sin diseño">
       <created>1682870203413</created>
@@ -331,7 +320,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683801789161</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Finalizado Parcialmente">
+      <created>1683825050740</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683825050740</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Finalizado Parcialmente">
+      <created>1683825095446</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683825095446</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +379,8 @@
     <MESSAGE value="Falta eliminar y modificar y mucho diseño" />
     <MESSAGE value="falta solo diseño" />
     <MESSAGE value="Avanzado el diseño" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avanzado el diseño" />
+    <MESSAGE value="Finalizado Parcialmente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizado Parcialmente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

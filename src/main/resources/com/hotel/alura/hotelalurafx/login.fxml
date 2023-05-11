@@ -14,12 +14,12 @@
       <Image url="@../../../../Imagenes/fondo.jpg" />
    </ImageView>
    <Pane fx:id="login" layoutX="78.0" layoutY="48.0" prefHeight="288.0" prefWidth="268.0" styleClass="panel" stylesheets="@../../../../css/otrologin.css" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="346.0" AnchorPane.topAnchor="48.0">
-      <Label fx:id="lblusuario" layoutX="40.0" layoutY="76.0" prefHeight="20.0" prefWidth="122.0" text="Usuario">
+      <Label fx:id="lblusuario" layoutX="40.0" layoutY="65.0" prefHeight="20.0" prefWidth="122.0" text="Usuario">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <Label fx:id="lblpass" layoutX="40.0" layoutY="141.0" prefHeight="48.0" prefWidth="122.0" stylesheets="@../../../../css/txtLogin.css" text="Contraseña">
+      <Label fx:id="lblpass" layoutX="40.0" layoutY="130.0" prefHeight="48.0" prefWidth="122.0" stylesheets="@../../../../css/txtLogin.css" text="Contraseña">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
