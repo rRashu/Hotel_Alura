@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="Creando el readme Guapo">
-      <change afterPath="$PROJECT_DIR$/Imagenes Readme/idea64_yOXNC0woRY.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Imagenes Readme/java_RStsmhdZOZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Imagenes Readme/java_YeMLqX98op.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Imagenes Readme/java_m79wh5B5u6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Imagenes Readme/java_pfpDlRXvdY.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -229,7 +232,7 @@
       <workItem from="1683742353542" duration="19887000" />
       <workItem from="1683770445518" duration="29828000" />
       <workItem from="1683819886119" duration="6317000" />
-      <workItem from="1683843463181" duration="7777000" />
+      <workItem from="1683843463181" duration="9112000" />
     </task>
     <task id="LOCAL-00001" summary="agregado Añadir huesped y visualizar - sin diseño">
       <created>1682870203413</created>
@@ -378,7 +381,28 @@
       <option name="project" value="LOCAL" />
       <updated>1683850974231</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Creando el readme Guapo">
+      <created>1683851760767</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1683851760767</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Creando el readme Guapo">
+      <created>1683851885133</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1683851885133</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Creando el readme Guapo">
+      <created>1683851991584</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1683851991584</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

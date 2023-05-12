@@ -1,25 +1,3 @@
-<head>
-  <style>
-    li {
-      color: blue;
-    }
-    em {
-      font-style: italic;
-      color: red;
-    }
-  </style>
-</head>
-
-# Título
-
-<p>Este es un párrafo con <em>texto enfatizado</em>.</p>
-
-<ul>
-  <li>Elemento 1</li>
-  <li>Elemento 2</li>
-  <li>Elemento 3</li>
-</ul>
-
 <p align="center">
   <img src="Imagenes Readme/msedge_kqbQ4Mp6g4.png" width="950" alt="Challenger Alura">
 </p>
@@ -36,10 +14,28 @@ El login Fue realizado en javafx junto a las animaciones para poder ese efecto d
 
 Para el correcto uso de esta aplicacion tan solo una vez iniciada seleccionamos que deseamos realizar entre las opciones tenemos 
 <ul>  
-<li>Elemento 1</li>
-  <li >Elemento 2</li>
-  <li>Elemento 3</li>
+  <li>Agregar Huesped</li>
+  <li>ELiminar Huesped</li>
+  <li>Modificar Huesped</li>
+  <li>Agregar Reserva</li>
+  <li>ELiminar Reserva</li>
+  <li>Modificar Reserva</li>
 </ul>
+<table>
+  <tr>
+    <td><img src="Imagenes Readme/java_RStsmhdZOZ.png" width="494" alt="Challenger Alura"></td>
+    <td><img src="Imagenes Readme/java_pfpDlRXvdY.png" width="494" alt="Challenger Alura"></td>
+  </tr>
+  <tr>
+    <td><img src="Imagenes Readme/java_m79wh5B5u6.png" width="494" alt="Challenger Alura"></td>
+    <td><img src="Imagenes Readme/java_YeMLqX98op.png" width="494" alt="Challenger Alura"></td>
+  </tr>
+</table>
+<hr style="border-top: 2px solid #a30000;">
+
+
+
+
 
 ![idea64_QOqcZlIh1o](https://user-images.githubusercontent.com/94420600/225733346-a4077167-4d71-48a0-9879-93b2436093c8.gif)
 
