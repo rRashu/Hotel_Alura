@@ -2,7 +2,9 @@
   <img src="Imagenes Readme/msedge_kqbQ4Mp6g4.png" width="950" alt="Challenger Alura">
 </p>
 <hr style="border-top: 2px solid #a30000;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gLJQRXIrsKc" frameborder="0" allowfullscreen></iframe>
+
+* Para ver la Aplicacion en ejecución con datos acceda [YouTube](https://www.youtube.com/watch?v=gLJQRXIrsKc)
+
 <hr style="border-top: 2px solid #a30000;">
 Este mini sistema fue creado como parte del proceso de aprendizaje en los cursos de aluraLatan
 <hr style="border-top: 2px solid #a30000;">
@@ -29,12 +31,12 @@ Para el correcto uso de esta aplicacion tan solo una vez iniciada seleccionamos 
 </ul>
 <table>
   <tr>
-    <td><img src="Imagenes Readme/java_RStsmhdZOZ.png" width="494" alt="Challenger Alura"></td>
-    <td><img src="Imagenes Readme/java_pfpDlRXvdY.png" width="494" alt="Challenger Alura"></td>
+    <td><img src="Imagenes Readme/java_RStsmhdZOZ.png" width="994" alt="Challenger Alura"></td>
+    <td><img src="Imagenes Readme/java_pfpDlRXvdY.png" width="994" alt="Challenger Alura"></td>
   </tr>
   <tr>
-    <td><img src="Imagenes Readme/java_m79wh5B5u6.png" width="494" alt="Challenger Alura"></td>
-    <td><img src="Imagenes Readme/java_YeMLqX98op.png" width="494" alt="Challenger Alura"></td>
+    <td><img src="Imagenes Readme/java_m79wh5B5u6.png" width="994" alt="Challenger Alura"></td>
+    <td><img src="Imagenes Readme/java_YeMLqX98op.png" width="994" alt="Challenger Alura"></td>
   </tr>
 </table>
 <hr style="border-top: 4px solid #a30000;">
@@ -55,7 +57,7 @@ crear un CRUD y recuperar datos una vez cerrado el programa.
 
 ## Notificacion
 
-Para el proceso de Notificacion se uso la Libreria Notifications de controlsfx perteneciente a javafx la cual nos
+Para el proceso de Notificacion se usó la Libreria Notifications de controlsfx perteneciente a javafx la cual nos
 permite crear pequeños mensajes no duraderos para mostrar ciertos eventos
 
 ``` python
@@ -69,12 +71,12 @@ noti.showInformation();
 
 <hr>
 <p align="center">
-  <img src="Imagenes Readme/notifficacion.gif" width="500" alt="Challenger Alura">
+  <img src="Imagenes Readme/notifficacion.gif" width="426" alt="Challenger Alura">
 </p>
 
 ## Animacion
 
-Para el proceso de Animacion de los label que suben u bajan se realizo por medio de Timeline perteneciente a Animacion en javafx 
+Para el proceso de Animacion de los label que suben u bajan se realizó por medio de Timeline perteneciente a Animacion en javafx 
 
 ``` python
   Timeline timeline = new Timeline(
@@ -87,7 +89,7 @@ Para el proceso de Animacion de los label que suben u bajan se realizo por medio
  ```
 ## Transición
 
-La linea que se marca debajo del text al ser seleccionado es una linea que se alarga para dar el efecto de llenado del borde en la parte inferior del Textfield.
+La línea que se marca debajo del text al ser seleccionado es una línea que se alarga para dar el efecto de llenado del borde en la parte inferior del Textfield.
 
 ``` python
 
@@ -99,12 +101,12 @@ La linea que se marca debajo del text al ser seleccionado es una linea que se al
 ```
 <hr>
 <p align="center">
-  <img src="Imagenes Readme/Transicion.gif" width="500" alt="Challenger Alura">
+  <img src="Imagenes Readme/Transicion.gif" width="426" alt="Challenger Alura">
 </p>
 
 ## Alerta
 
-Al momento de eliminar ya sea un huesped o una reserva son marca una alerta que nos hace esperar 5 segundos para activar el boton si y asi estar seguro de querer eliminar, el temporizador se realizo con TimeLine.
+Al momento de eliminar ya sea un huesped o una reserva son marca una alerta que nos hace esperar 5 segundos para activar el boton si y asi estar seguro de querer eliminar, el temporizador se realizó con TimeLine.
 
 ``` python
 Alert alert = new Alert(Alert.AlertType.INFORMATION, "¿Desea continuar?", yesButton, noButton);
@@ -116,7 +118,7 @@ dialogPane.getStyleClass().add("myDialog");
 ``` 
 <hr>
 <p align="center">
-  <img src="Imagenes Readme/Alerta.gif" width="500" alt="Challenger Alura">
+  <img src="Imagenes Readme/Alerta.gif" width="426" alt="Challenger Alura">
 </p>
 
 ## `Heramientas Usadas `

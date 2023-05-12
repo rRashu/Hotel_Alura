@@ -230,6 +230,7 @@
       <workItem from="1683819886119" duration="6317000" />
       <workItem from="1683843463181" duration="12238000" />
       <workItem from="1683856724929" duration="3000000" />
+      <workItem from="1683864709145" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="agregado Añadir huesped y visualizar - sin diseño">
       <created>1682870203413</created>
@@ -413,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683859020331</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Creando el readme Guapo">
+      <created>1683864888574</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1683864888574</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
