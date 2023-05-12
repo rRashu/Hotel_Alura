@@ -1,16 +1,33 @@
 <p align="center">
-  <img src="Imagenes Readme/msedge_kqbQ4Mp6g4.png" width="100%" alt="Challenger Alura">
+  <img src="Imagenes Readme/msedge_kqbQ4Mp6g4.png" width="950" alt="Challenger Alura">
 </p>
 Este mini sistema fue creado como parte del proceso de aprendizaje en los cursos de aluraLatan
-
-
-<hr>
-<hr>
+<p align="center">
+  <img src="Imagenes Readme/idea64_yOXNC0woRY.gif" width="950" alt="Challenger Alura">
+</p>
+<hr style="border-top: 2px solid #a30000;">
+El login Fue realizado en javafx junto a las animaciones para poder ese efecto de seleccionado, para que las letras suban y bajen se uso css.
+<hr style="border-top: 2px solid #a30000;">
+<hr style="border-top: 4px solid #537188;">
 
 ## **Funcionamiento**
 
-El funcionamiento es simple en la ventana principal tan solo elegimos ya sea el dibujo del dinero para el convertidor de
-moneda o el de la balanza para el convertidor de peso como se muestra acontinuacion
+Para el correcto uso de esta aplicacion tan solo una vez iniciada seleccionamos que deseamos realizar entre las opciones tenemos 
+
+<ul>
+  <li style="color: black;">
+    <span style="color: black;">Elemento 1</span>
+    <style>li:before { color: red; }</style>
+  </li>
+  <li style="color: black;">
+    <span style="color: black;">Elemento 2</span>
+    <style>li:before { color: blue; }</style>
+  </li>
+  <li style="color: black;">
+    <span style="color: black;">Elemento 3</span>
+    <style>li:before { color: blue; }</style>
+  </li>
+</ul>
 
 ![idea64_QOqcZlIh1o](https://user-images.githubusercontent.com/94420600/225733346-a4077167-4d71-48a0-9879-93b2436093c8.gif)
 
