@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaacd3b7-2690-4b02-811e-5a49e07e6886" name="Changes" comment="Creando el readme Guapo">
+      <change afterPath="$PROJECT_DIR$/Imagenes Readme/msedge_kqbQ4Mp6g4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nombre-archivo-css.css" beforeDir="false" afterPath="$PROJECT_DIR$/nombre-archivo-css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nombre-archivo-css.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,11 +123,11 @@
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\com\hotel\alura\Style" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\Imagenes Readme" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\Imagenes" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\css" />
       <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\resources\com\hotel\alura\hotelalurafx" />
-      <recent name="C:\Users\robin\IdeaProjects\Hotel_Alura\src\main\java\javafx" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hotel.alura.hotelalurafx" />
@@ -229,7 +229,7 @@
       <workItem from="1683742353542" duration="19887000" />
       <workItem from="1683770445518" duration="29828000" />
       <workItem from="1683819886119" duration="6317000" />
-      <workItem from="1683843463181" duration="5447000" />
+      <workItem from="1683843463181" duration="6631000" />
     </task>
     <task id="LOCAL-00001" summary="agregado Añadir huesped y visualizar - sin diseño">
       <created>1682870203413</created>
@@ -357,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683848723485</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Creando el readme Guapo">
+      <created>1683848985223</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683848985223</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

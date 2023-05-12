@@ -1,15 +1,7 @@
-<head>
-  <link rel="stylesheet" type="text/css" href="nombre-archivo-css.css">
-</head>
 
-<h3 class="section-title --top-decoration"><strong>Challenge ONE Back End Java<br> Sprint 01:</strong><br>Crea tu propia
-aplicación Desktop con conexión a la Base de Datos.</h3>
-<hr>
-<br>
+![msedge_kqbQ4Mp6g4.png](Imagenes%20Readme%2Fmsedge_kqbQ4Mp6g4.png)
 
 Este mini sistema fue creado como parte del proceso de aprendizaje en los cursos de aluraLatan
-
-![idea64_wiIWS5Z9Bn](https://user-images.githubusercontent.com/94420600/225733094-997b8e78-fc97-4195-9215-cbaf71b160f0.jpg)
 
 
 <hr>
