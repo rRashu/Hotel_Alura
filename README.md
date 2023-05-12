@@ -1,3 +1,25 @@
+<head>
+  <style>
+    li {
+      color: blue;
+    }
+    em {
+      font-style: italic;
+      color: red;
+    }
+  </style>
+</head>
+
+# Título
+
+<p>Este es un párrafo con <em>texto enfatizado</em>.</p>
+
+<ul>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+</ul>
+
 <p align="center">
   <img src="Imagenes Readme/msedge_kqbQ4Mp6g4.png" width="950" alt="Challenger Alura">
 </p>
@@ -14,9 +36,9 @@ El login Fue realizado en javafx junto a las animaciones para poder ese efecto d
 
 Para el correcto uso de esta aplicacion tan solo una vez iniciada seleccionamos que deseamos realizar entre las opciones tenemos 
 <ul>  
-<li style="color: blue;">Elemento 1</li>
-  <li style="color: blue;">Elemento 2</li>
-  <li style="color: blue;">Elemento 3</li>
+<li>Elemento 1</li>
+  <li >Elemento 2</li>
+  <li>Elemento 3</li>
 </ul>
 
 ![idea64_QOqcZlIh1o](https://user-images.githubusercontent.com/94420600/225733346-a4077167-4d71-48a0-9879-93b2436093c8.gif)
