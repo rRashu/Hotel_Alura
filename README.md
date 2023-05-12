@@ -1,6 +1,6 @@
-
-![msedge_kqbQ4Mp6g4.png](Imagenes%20Readme%2Fmsedge_kqbQ4Mp6g4.png)
-
+<p align="center">
+  <img src="Imagenes Readme/msedge_kqbQ4Mp6g4.png" width="100%" alt="Challenger Alura">
+</p>
 Este mini sistema fue creado como parte del proceso de aprendizaje en los cursos de aluraLatan
 
 
