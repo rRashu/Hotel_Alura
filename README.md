@@ -1,7 +1,11 @@
 <p align="center">
   <img src="Imagenes Readme/msedge_kqbQ4Mp6g4.png" width="950" alt="Challenger Alura">
 </p>
+<hr style="border-top: 2px solid #a30000;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gLJQRXIrsKc" frameborder="0" allowfullscreen></iframe>
+<hr style="border-top: 2px solid #a30000;">
 Este mini sistema fue creado como parte del proceso de aprendizaje en los cursos de aluraLatan
+<hr style="border-top: 2px solid #a30000;">
 <p align="center">
   <img src="Imagenes Readme/idea64_yOXNC0woRY.gif" width="1304" alt="Challenger Alura">
 </p>
@@ -9,6 +13,7 @@ Este mini sistema fue creado como parte del proceso de aprendizaje en los cursos
 El login Fue realizado en javafx junto a las animaciones para poder ese efecto de seleccionado, para que las letras suban y bajen se usó css.
 <hr style="border-top: 2px solid #a30000;">
 <hr style="border-top: 4px solid #537188;">
+
 
 ## **Funcionamiento**
 
