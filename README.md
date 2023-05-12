@@ -13,6 +13,7 @@ El login Fue realizado en javafx junto a las animaciones para poder ese efecto d
 ## **Funcionamiento**
 
 Para el correcto uso de esta aplicacion tan solo una vez iniciada seleccionamos que deseamos realizar entre las opciones tenemos 
+
 <ul>  
   <li>Agregar Huesped</li>
   <li>ELiminar Huesped</li>
@@ -31,98 +32,94 @@ Para el correcto uso de esta aplicacion tan solo una vez iniciada seleccionamos 
     <td><img src="Imagenes Readme/java_YeMLqX98op.png" width="494" alt="Challenger Alura"></td>
   </tr>
 </table>
-<hr style="border-top: 2px solid #a30000;">
-
-
-
-
-
-![idea64_QOqcZlIh1o](https://user-images.githubusercontent.com/94420600/225733346-a4077167-4d71-48a0-9879-93b2436093c8.gif)
-
-- Para Regresar o Ver informacion sobre el autor tan solo damos click en el dibujo de la persona ubicado en la parte
-  inferior izquierda de todas las ventanas
+<hr style="border-top: 4px solid #a30000;">
 
 <hr>
 <hr>
 
 ## Descripción
 
-El conversor es un sistema basico, en el cual al inicio se nos muestra una ventana en la cual por medio de dibujos
-debemos elegir cual conversor deberiamos elegir.
+Un sistema basico de Hospedaje en la cual nos permite crear un huesped y registrar una reserva para tal huesped, el
+almacenamiento de datos se realiza por medio de base de datos usando JDBC para poder realizar persistencia de datos y
+crear un CRUD y recuperar datos una vez cerrado el programa.
 
 <hr>
 <hr>
 
-## Proceso de Validacion
+# Proceso de Notificacion, Animacion y Alerta
 
-Para el proceso de validacion simplemente
+## Notificacion
 
-```python
-if ((textmoneda2.getText().length() == 10) | Character.isLetter(validar)
-        | (validar == '.' & & textmoneda2.getText().contains(".")) | (validar == ',')
-        | (validar == '.' & & textmoneda2.getText().length() == 0)) {
-e.consume();
-}
-```
+Para el proceso de Notificacion se uso la Libreria Notifications de controlsfx perteneciente a javafx la cual nos
+permite crear pequeños mensajes no duraderos para mostrar ciertos eventos
 
-* Limitamos el tamaño de caracteres que se ingresan.
-* Solo se puede usar numeros.
-* Solo se puede usar un punto en cada campo.
-
-```python
- - [✔] 123.456
-- [X]
-12.34
-.56
-```
-
-* Ningun campo puede iniciar con un punto
-
-```python
- - [✔] 123.456
-- [X]
-.123456
+``` python
+noti.title("Acceso Correcto!!");
+noti.text("Bienvenido " + txtusuario.getText());
+noti.position(Pos.BOTTOM_RIGHT);
+noti.owner(stage);
+noti.hideAfter(Duration.seconds(3));
+noti.showInformation();
 ```
 
 <hr>
+<p align="center">
+  <img src="Imagenes Readme/notifficacion.gif" width="500" alt="Challenger Alura">
+</p>
+
+## Animacion
+
+Para el proceso de Animacion de los label que suben u bajan se realizo por medio de Timeline perteneciente a Animacion en javafx 
+
+``` python
+  Timeline timeline = new Timeline(
+                new KeyFrame(Duration.ZERO, new KeyValue(lbl.textFillProperty(), startColor)),
+                new KeyFrame(duracionAnimacion, new KeyValue(lbl.textFillProperty(), endColor)),
+                new KeyFrame(Duration.ZERO, new KeyValue(lbl.layoutYProperty(), startY)),
+                new KeyFrame(duracionAnimacion, new KeyValue(lbl.layoutYProperty(), endY)),
+                new KeyFrame(Duration.ZERO, new KeyValue(myline.endXProperty(), (double) inicio)),
+                new KeyFrame(duracionAnimacion, new KeyValue(myline.endXProperty(), (double) fin))
+ ```
+## Transición
+
+La linea que se marca debajo del text al ser seleccionado es una linea que se alarga para dar el efecto de llenado del borde en la parte inferior del Textfield.
+
+``` python
+
+ FadeTransition fadeTransition = new FadeTransition(duracionAnimacion, myline);
+        fadeTransition.setFromValue(0.5);
+        fadeTransition.setToValue(1);
+        fadeTransition.setOnFinished(e -> myline.setVisible(true));
+        fadeTransition.play();
+```
 <hr>
+<p align="center">
+  <img src="Imagenes Readme/Transicion.gif" width="500" alt="Challenger Alura">
+</p>
 
-❌ `Fallas que aun no logro solucionar`
----
+## Alerta
 
-🕷 **Validacion:** ~~Al momento de introducir valores me permite tanto comas y puntos, el problema viene cuando
-introducimos ambas en el mismo campo salta una exepcion.~~
+Al momento de eliminar ya sea un huesped o una reserva son marca una alerta que nos hace esperar 5 segundos para activar el boton si y asi estar seguro de querer eliminar, el temporizador se realizo con TimeLine.
 
-![yoZDO77eY0](https://user-images.githubusercontent.com/94420600/224590974-896b598e-3322-4913-a3a7-cb763d1c4cea.gif)
+``` python
+Alert alert = new Alert(Alert.AlertType.INFORMATION, "¿Desea continuar?", yesButton, noButton);
+alert.setTitle("Eliminar Reserva");
+DialogPane dialogPane = alert.getDialogPane();
+dialogPane.getStylesheets().add(
+Objects.requireNonNull(getClass().getResource("..\\..\\..\\..\\css\\alerta.css")).toExternalForm());
+dialogPane.getStyleClass().add("myDialog");
+``` 
+<hr>
+<p align="center">
+  <img src="Imagenes Readme/Alerta.gif" width="500" alt="Challenger Alura">
+</p>
 
-<br>
+## `Heramientas Usadas `
 
-🕷 **Ventana sin memoria de retorno:** ~~Al no querer crear varias clases iguales (La que tiene mis link y nombre) en el
-momento que de una ventana de conversion se presiona el boton de datos me vuelve al inicio y no regreso a la ventana que
-estaba anteriormente.~~
-
-![idea64_rFMCCCtVpV](https://user-images.githubusercontent.com/94420600/224591238-cfb529b5-e0db-4d7b-a12d-bd95cb491161.gif)
-
-<code><strong>Solucion mas sencilla gano, no cerrar la ventana que invoca y cerrar solo la ventana, tambien se cierra si
-pierde el focus.</strong></code>
-
-
- <hr>
-
-🕷 **Codigo muy sucio:** ~~Falta mucha optimizacion que se ira implementando de a poco hasta obtener algo mas limpio.~~
-
-
-<br>
-
-🕷 **Mala eleccion de colores:** ~~Tanto la interfaz grafica como el resto de ventanas no me convense del todo, cuando
-tenga inspiracion mejorara.~~
-
-## `Corregido `
-
-- [x] Validacion.
-- [x] Ventana sin memoria de retorno.
-- [x] Codigo Muy sucio.
-- [x] Mala Eleccion de colores.
+- [x] JavaFx
+- [x] IntelliJ IDEA
+- [x] IconStyle.
+- [x] MySql.
 
 <br>
 <hr>
